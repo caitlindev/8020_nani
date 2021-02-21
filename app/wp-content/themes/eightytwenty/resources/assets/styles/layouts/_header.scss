@@ -1,0 +1,87 @@
+@import url(https://use.typekit.net/yos3ycq.css);
+@import url(https://use.typekit.net/nja4dmq.css);
+
+$logo-height: 63px;
+
+body {
+  font-family: conglomerate, serif;
+  font-size: 1rem;
+}
+
+.wrap.container {
+  padding: 0;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #cc9b7a;
+  text-decoration: none;
+}
+
+.container {
+  max-width: none;
+}
+
+.banner {
+  padding: 1.875rem 4.063rem;
+  background-color: #3a4736;
+}
+
+.banner .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner .brand,
+.banner .nav-primary {
+  flex: 1 1 auto;
+}
+
+.banner .brand img,
+.banner .nav-primary ul li {
+  line-height: $logo-height;
+}
+
+blockquote.banner-quote {
+  font-style: italic;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  color: #cc9b7a;
+  background: #ffe5d4;
+}
+
+blockquote span {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+blockquote small {
+  font-size: 16px;
+  font-family: gopher;
+}
+
+#menu-main-menu {
+  justify-content: flex-end;
+}
+
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  padding: 0.5rem 1.5rem;
+}
+
+.block.subconscious {
+  padding: 6.25rem 8.125rem;
+  background: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/female-silhouette-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
