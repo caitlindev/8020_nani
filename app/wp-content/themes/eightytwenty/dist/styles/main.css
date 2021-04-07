@@ -1,4 +1,4 @@
-@import url(https://use.typekit.net/yos3ycq.css);@import url(https://use.typekit.net/nja4dmq.css);/** Import Bootstrap functions */
+@import url(https://use.typekit.net/zdy2qty.css);/** Import Bootstrap functions */
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 /** Import everything from autoload */
 /*!
@@ -4009,8 +4009,8 @@ input[type="button"].btn-block {
   /* line 54, node_modules/bootstrap/scss/_nav.scss */
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .banner .nav li.show .nav-link,
-  .banner .nav .nav-tabs li.show .nav-link {
+  .nav-tabs header .nav li.show .nav-link,
+  header .nav .nav-tabs li.show .nav-link {
     color: #495057;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
@@ -4033,16 +4033,16 @@ input[type="button"].btn-block {
 /* line 92, node_modules/bootstrap/scss/_nav.scss */
 .nav-fill > .nav-link,
 .nav-fill .nav-item,
-.nav-fill .banner .nav li,
-.banner .nav .nav-fill li {
+.nav-fill header .nav li,
+header .nav .nav-fill li {
   flex: 1 1 auto;
   text-align: center; }
 
 /* line 100, node_modules/bootstrap/scss/_nav.scss */
 .nav-justified > .nav-link,
 .nav-justified .nav-item,
-.nav-justified .banner .nav li,
-.banner .nav .nav-justified li {
+.nav-justified header .nav li,
+header .nav .nav-justified li {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center; }
@@ -9511,84 +9511,952 @@ a.text-dark:hover, a.text-dark:focus {
 
 /** Captions */
 /** Text meant only for screen readers */
-/* line 6, resources/assets/styles/layouts/_header.scss */
+/* line 7, resources/assets/styles/layouts/_header.scss */
 body {
-  font-family: conglomerate, serif;
-  font-size: 1rem; }
+  font-family: gopher, sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #4a4a4a; }
 
-/* line 11, resources/assets/styles/layouts/_header.scss */
-.wrap.container {
-  padding: 0; }
+/* line 14, resources/assets/styles/layouts/_header.scss */
+.wrap {
+  margin-top: 117px; }
 
-/* line 15, resources/assets/styles/layouts/_header.scss */
+/* line 18, resources/assets/styles/layouts/_header.scss */
+.container {
+  max-width: 1200px; }
+
+/* line 22, resources/assets/styles/layouts/_header.scss */
 a {
-  color: white; }
+  color: #CC9B7A; }
+  /* line 25, resources/assets/styles/layouts/_header.scss */
+  a:hover {
+    color: #c58d68; }
 
-/* line 19, resources/assets/styles/layouts/_header.scss */
+/* line 30, resources/assets/styles/layouts/_header.scss */
 a:hover {
   color: #cc9b7a;
   text-decoration: none; }
 
-/* line 24, resources/assets/styles/layouts/_header.scss */
-.container {
-  max-width: none; }
+/* line 35, resources/assets/styles/layouts/_header.scss */
+h2 {
+  font-family: conglomerate, serif;
+  color: #cc9b7a;
+  font-size: 36px;
+  line-height: 48px; }
+  /* line 41, resources/assets/styles/layouts/_header.scss */
+  h2.heading {
+    margin-bottom: 40px; }
 
-/* line 28, resources/assets/styles/layouts/_header.scss */
-.banner {
-  padding: 1.875rem 4.063rem;
-  background-color: #3a4736; }
+/* line 46, resources/assets/styles/layouts/_header.scss */
+button,
+.button,
+.page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+.page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+.page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  color: white; }
+  /* line 57, resources/assets/styles/layouts/_header.scss */
+  button.green,
+  .button.green,
+  .page.contact div.wpforms-container-full .wpforms-form input.green[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form button.green[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .green.wpforms-page-button {
+    background: #3a4736; }
+    /* line 60, resources/assets/styles/layouts/_header.scss */
+    button.green:hover,
+    .button.green:hover,
+    .page.contact div.wpforms-container-full .wpforms-form input.green:hover[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form button.green:hover[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form .green.wpforms-page-button:hover {
+      background: #2e392b; }
+  /* line 65, resources/assets/styles/layouts/_header.scss */
+  button.gold,
+  .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form button.wpforms-page-button,
+  .button.gold,
+  .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    background: #cc9b7a !important; }
+    /* line 68, resources/assets/styles/layouts/_header.scss */
+    button.gold:hover,
+    .page.contact div.wpforms-container-full .wpforms-form button:hover[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form button.wpforms-page-button:hover,
+    .button.gold:hover,
+    .page.contact div.wpforms-container-full .wpforms-form input:hover[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form button:hover[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
+      background: #c58d68; }
 
-/* line 33, resources/assets/styles/layouts/_header.scss */
-.banner .container {
-  display: flex;
-  flex-direction: row; }
+/* line 74, resources/assets/styles/layouts/_header.scss */
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: 'conglomerate';
+  position: relative;
+  height: 300px;
+  font-size: 30px;
+  line-height: 30px; }
+  /* line 86, resources/assets/styles/layouts/_header.scss */
+  .hero span {
+    width: calc(100% - ($margin-mobile*2));
+    position: absolute;
+    text-align: right;
+    bottom: 30px;
+    right: 30px; }
 
-/* line 38, resources/assets/styles/layouts/_header.scss */
-.banner .brand,
-.banner .nav-primary {
-  flex: 1 1 auto; }
+/* line 96, resources/assets/styles/layouts/_header.scss */
+header {
+  padding: 1.875rem 30px;
+  background-color: #3a4736;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  /* line 105, resources/assets/styles/layouts/_header.scss */
+  header .container {
+    display: flex;
+    flex-direction: row; }
+  /* line 110, resources/assets/styles/layouts/_header.scss */
+  header .brand {
+    margin-right: 20px; }
+    /* line 113, resources/assets/styles/layouts/_header.scss */
+    header .brand img {
+      height: 50px;
+      width: auto;
+      margin-top: 7px; }
+  /* line 125, resources/assets/styles/layouts/_header.scss */
+  header .nav-primary ul li.current_page_item a, header .nav-primary ul li:hover a {
+    color: #b0b5af; }
+  /* line 133, resources/assets/styles/layouts/_header.scss */
+  header .brand,
+  header .nav-primary {
+    flex: 1 1 auto; }
+    /* line 137, resources/assets/styles/layouts/_header.scss */
+    header .brand img,
+    header .brand ul,
+    header .brand li,
+    header .nav-primary img,
+    header .nav-primary ul,
+    header .nav-primary li {
+      line-height: 63px; }
+  /* line 144, resources/assets/styles/layouts/_header.scss */
+  header #btn-hamburger {
+    cursor: pointer;
+    display: block; }
+  /* line 149, resources/assets/styles/layouts/_header.scss */
+  header .nav-primary {
+    display: none; }
 
-/* line 43, resources/assets/styles/layouts/_header.scss */
-.banner .brand img,
-.banner .nav-primary ul li {
-  line-height: 63px; }
+/* line 154, resources/assets/styles/layouts/_header.scss */
+.nav-mobile {
+  padding: 130px 4.063rem;
+  position: fixed;
+  z-index: 999;
+  background: #3a4736;
+  width: 100%;
+  left: 0;
+  top: -100%;
+  transition: all 0.5s ease; }
+  /* line 164, resources/assets/styles/layouts/_header.scss */
+  .nav-mobile .container {
+    display: block; }
+  /* line 168, resources/assets/styles/layouts/_header.scss */
+  .nav-mobile.expanded {
+    top: 0;
+    transition: all 0.5s ease; }
+  /* line 173, resources/assets/styles/layouts/_header.scss */
+  .nav-mobile .btn-close {
+    text-align: right;
+    display: block;
+    cursor: pointer; }
+    /* line 178, resources/assets/styles/layouts/_header.scss */
+    .nav-mobile .btn-close img {
+      width: 22px;
+      height: auto;
+      margin: 23px 0; }
+  /* line 186, resources/assets/styles/layouts/_header.scss */
+  .nav-mobile .nav li {
+    display: block;
+    text-align: right;
+    width: 100%;
+    padding: 16px 0; }
+    /* line 192, resources/assets/styles/layouts/_header.scss */
+    .nav-mobile .nav li a {
+      padding: 0;
+      font-size: 18px;
+      color: #cc9b7a; }
 
-/* line 48, resources/assets/styles/layouts/_header.scss */
+/* line 201, resources/assets/styles/layouts/_header.scss */
+ul, p {
+  margin: 0; }
+
+/* line 205, resources/assets/styles/layouts/_header.scss */
 blockquote.banner-quote {
   font-style: italic;
-  font-size: 36px;
-  line-height: 43px;
   text-align: center;
-  padding: 80px 0;
+  margin: 0;
   width: 100%;
   color: #cc9b7a;
-  background: #ffe5d4; }
+  background: #ffe5d4;
+  padding: 30px;
+  font-size: 24px;
+  line-height: 32px; }
+  /* line 216, resources/assets/styles/layouts/_header.scss */
+  blockquote.banner-quote span {
+    font-family: conglomerate, serif;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto; }
+  /* line 223, resources/assets/styles/layouts/_header.scss */
+  blockquote.banner-quote small {
+    font-size: 16px;
+    font-family: gopher; }
 
-/* line 59, resources/assets/styles/layouts/_header.scss */
-blockquote span {
-  max-width: 900px;
-  display: block;
-  margin: 0 auto; }
+/* line 229, resources/assets/styles/layouts/_header.scss */
+.banner {
+  background: white;
+  margin: 130px; }
 
-/* line 65, resources/assets/styles/layouts/_header.scss */
-blockquote small {
-  font-size: 16px;
-  font-family: gopher; }
-
-/* line 70, resources/assets/styles/layouts/_header.scss */
+/* line 234, resources/assets/styles/layouts/_header.scss */
 #menu-main-menu {
   justify-content: flex-end; }
 
-/* line 78, resources/assets/styles/layouts/_header.scss */
-.banner .nav a {
-  padding: 0.5rem 1.5rem; }
+/* line 241, resources/assets/styles/layouts/_header.scss */
+header .nav li a {
+  padding: 0.5rem 1.5rem;
+  font-size: 16px;
+  font-family: 'conglomerate'; }
 
-/* line 82, resources/assets/styles/layouts/_header.scss */
-.block.subconscious {
-  padding: 6.25rem 8.125rem;
-  background: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/female-silhouette-photo.png);
-  background-size: contain;
-  background-repeat: no-repeat; }
+/* line 248, resources/assets/styles/layouts/_header.scss */
+.blocks {
+  display: flex;
+  flex-direction: column; }
+  /* line 252, resources/assets/styles/layouts/_header.scss */
+  .blocks .block {
+    flex: 0 1 50vw; }
+    /* line 255, resources/assets/styles/layouts/_header.scss */
+    .blocks .block.green {
+      background: #3a4736;
+      color: #cc9b7a; }
+      /* line 259, resources/assets/styles/layouts/_header.scss */
+      .blocks .block.green h2 {
+        color: #cc9b7a; }
+    /* line 264, resources/assets/styles/layouts/_header.scss */
+    .blocks .block.gold, .blocks .page.contact div.wpforms-container-full .wpforms-form input.block[type=submit], .page.contact div.wpforms-container-full .wpforms-form .blocks input.block[type=submit],
+    .blocks .page.contact div.wpforms-container-full .wpforms-form button.block[type=submit], .page.contact div.wpforms-container-full .wpforms-form .blocks button.block[type=submit],
+    .blocks .page.contact div.wpforms-container-full .wpforms-form .block.wpforms-page-button, .page.contact div.wpforms-container-full .wpforms-form .blocks .block.wpforms-page-button {
+      background: #cc9b7a;
+      color: #3a4736; }
+      /* line 268, resources/assets/styles/layouts/_header.scss */
+      .blocks .block.gold h2, .blocks .page.contact div.wpforms-container-full .wpforms-form input.block[type=submit] h2, .page.contact div.wpforms-container-full .wpforms-form .blocks input.block[type=submit] h2, .blocks .page.contact div.wpforms-container-full .wpforms-form button.block[type=submit] h2, .page.contact div.wpforms-container-full .wpforms-form .blocks button.block[type=submit] h2, .blocks .page.contact div.wpforms-container-full .wpforms-form .block.wpforms-page-button h2, .page.contact div.wpforms-container-full .wpforms-form .blocks .block.wpforms-page-button h2 {
+        color: #3a4736; }
+    /* line 273, resources/assets/styles/layouts/_header.scss */
+    .blocks .block .content {
+      width: 100%;
+      padding: calc(30px * 2) 30px; }
+      /* line 277, resources/assets/styles/layouts/_header.scss */
+      .blocks .block .content p {
+        margin: 16px 0 65px; }
+
+/* line 288, resources/assets/styles/layouts/_header.scss */
+.blocks.subconscious {
+  padding: 30px 30px 115%;
+  background: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/female-silhouette-photo-e1614099371467.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 95%; }
+  /* line 295, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious .container {
+    display: flex;
+    justify-content: flex-end; }
+  /* line 300, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious .block {
+    padding: 0; }
+    /* line 303, resources/assets/styles/layouts/_header.scss */
+    .blocks.subconscious .block.right {
+      flex-basis: auto;
+      padding: 0; }
+      /* line 307, resources/assets/styles/layouts/_header.scss */
+      .blocks.subconscious .block.right p {
+        margin-top: 10vw; }
+
+/* line 319, resources/assets/styles/layouts/_header.scss */
+.page.hypnotherapy .block.hypnotherapy {
+  background: #3a4736;
+  max-width: none;
+  flex-shrink: 0;
+  height: auto;
+  color: #cc9b7a; }
+
+/* line 327, resources/assets/styles/layouts/_header.scss */
+.page.hypnotherapy .faq {
+  margin-top: 130px;
+  margin-bottom: 130px; }
+
+/* Accordion */
+/* line 336, resources/assets/styles/layouts/_header.scss */
+#sp-ea-63.sp-easy-accordion .sp-ea-single {
+  background: none; }
+  /* line 339, resources/assets/styles/layouts/_header.scss */
+  #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-header {
+    background: #FFEFE5; }
+    /* line 342, resources/assets/styles/layouts/_header.scss */
+    #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-header:hover {
+      background: #c58d68; }
+    /* line 346, resources/assets/styles/layouts/_header.scss */
+    #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-header a {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: bold; }
+  /* line 354, resources/assets/styles/layouts/_header.scss */
+  #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-body p {
+    font-size: 16px;
+    line-height: 30px; }
+
+/* line 367, resources/assets/styles/layouts/_header.scss */
+.page.bodycode .block.body-code {
+  background: #cc9b7a;
+  max-width: none;
+  flex-shrink: 0;
+  height: auto; }
+  /* line 373, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .block.body-code h2 {
+    color: #4a4a4a; }
+
+/* line 378, resources/assets/styles/layouts/_header.scss */
+.page.bodycode .balance-methods {
+  padding: 0 0 130px; }
+  /* line 381, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .balance-methods ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0; }
+    /* line 387, resources/assets/styles/layouts/_header.scss */
+    .page.bodycode .balance-methods ul li {
+      flex: 0 0 100%;
+      overflow: hidden; }
+      /* line 391, resources/assets/styles/layouts/_header.scss */
+      .page.bodycode .balance-methods ul li span {
+        display: block;
+        padding: 48px;
+        margin: 12px;
+        height: auto;
+        font-size: 16px;
+        line-height: 30px;
+        color: #CC9B7A;
+        text-align: left;
+        background: #FFEFE5; }
+
+/* line 406, resources/assets/styles/layouts/_header.scss */
+.page.bodycode .benefits {
+  margin-bottom: 130px; }
+  /* line 409, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .benefits ul {
+    column-count: 1;
+    column-fill: auto;
+    margin-bottom: 48px; }
+    /* line 414, resources/assets/styles/layouts/_header.scss */
+    .page.bodycode .benefits ul li {
+      font-size: 16px;
+      line-height: 30px; }
+
+/* line 426, resources/assets/styles/layouts/_header.scss */
+.testimonials {
+  display: block;
+  padding: calc(30px * 2) 30px; }
+  /* line 430, resources/assets/styles/layouts/_header.scss */
+  .testimonials h2 {
+    margin: 0 0 24px; }
+  /* line 435, resources/assets/styles/layouts/_header.scss */
+  .testimonials #sample_slider .owl-stage-outer {
+    width: 100% !important;
+    margin: 0 auto; }
+  /* line 440, resources/assets/styles/layouts/_header.scss */
+  .testimonials #sample_slider .owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none !important; }
+    /* line 446, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-nav button {
+      width: 46px !important;
+      height: 106px !important;
+      background: #cc9b7a !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      margin: 0 !important; }
+      /* line 454, resources/assets/styles/layouts/_header.scss */
+      .testimonials #sample_slider .owl-nav button.owl-next {
+        right: 0;
+        background-image: url("http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/arrow_right.svg") !important; }
+        /* line 458, resources/assets/styles/layouts/_header.scss */
+        .testimonials #sample_slider .owl-nav button.owl-next:hover {
+          transition: auto !important;
+          filter: brightness(90%); }
+      /* line 464, resources/assets/styles/layouts/_header.scss */
+      .testimonials #sample_slider .owl-nav button.owl-prev {
+        left: 0;
+        background-image: url("http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/arrow_left.svg") !important; }
+        /* line 468, resources/assets/styles/layouts/_header.scss */
+        .testimonials #sample_slider .owl-nav button.owl-prev:hover {
+          transition: auto !important;
+          filter: brightness(90%); }
+  /* line 477, resources/assets/styles/layouts/_header.scss */
+  .testimonials #sample_slider .owl-dots button {
+    width: auto;
+    height: auto; }
+    /* line 480, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-dots button span {
+      border-radius: 0 !important;
+      width: calc(100vw/12) !important;
+      height: 5px !important;
+      background: #ffe5d4 !important; }
+    /* line 488, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-dots button.active span {
+      background: #cc9b7a !important; }
+
+/* line 498, resources/assets/styles/layouts/_header.scss */
+.page.about .hero {
+  min-height: 680px;
+  height: auto;
+  background-position-y: -80px; }
+
+/* line 505, resources/assets/styles/layouts/_header.scss */
+.page.about .block .icon {
+  margin-bottom: 42px; }
+
+/* line 510, resources/assets/styles/layouts/_header.scss */
+.page.about .continued-education {
+  padding: 130px 0;
+  background: #FFE5D4; }
+  /* line 514, resources/assets/styles/layouts/_header.scss */
+  .page.about .continued-education ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0; }
+    /* line 520, resources/assets/styles/layouts/_header.scss */
+    .page.about .continued-education ul li {
+      font-size: 16px;
+      line-height: 21px;
+      color: #CC9B7A;
+      flex: 0 0 100%;
+      font-weight: bold;
+      overflow: hidden; }
+      /* line 528, resources/assets/styles/layouts/_header.scss */
+      .page.about .continued-education ul li span {
+        position: relative;
+        display: block;
+        border: solid 2px #CC9B7A;
+        padding: 24px;
+        margin: 12px;
+        height: 195px;
+        text-align: center; }
+        /* line 537, resources/assets/styles/layouts/_header.scss */
+        .page.about .continued-education ul li span .icon {
+          display: block;
+          width: 23px;
+          height: auto;
+          position: absolute;
+          left: calc(50% - 23px/2);
+          bottom: 23px; }
+
+/* line 556, resources/assets/styles/layouts/_header.scss */
+.page.contact h2 {
+  margin: 130px 0 30px; }
+
+/* line 560, resources/assets/styles/layouts/_header.scss */
+.page.contact .contact-info {
+  display: flex;
+  line-height: 1.6;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  /* line 566, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .left {
+    flex: 1 1 100%;
+    margin-bottom: 130px; }
+  /* line 571, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .wpforms-container {
+    flex: 1 1 100%;
+    margin-bottom: 130px; }
+  /* line 576, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .addresshours {
+    display: flex;
+    margin: 40px 0;
+    flex-direction: column; }
+  /* line 582, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .address {
+    margin: 0 0 24px 0; }
+  /* line 587, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .fees ul {
+    padding: 0;
+    margin-bottom: 24px;
+    list-style-type: none; }
+    /* line 592, resources/assets/styles/layouts/_header.scss */
+    .page.contact .contact-info .fees ul li {
+      margin: 24px 0; }
+      /* line 595, resources/assets/styles/layouts/_header.scss */
+      .page.contact .contact-info .fees ul li:first-child {
+        margin-top: 0; }
+      /* line 599, resources/assets/styles/layouts/_header.scss */
+      .page.contact .contact-info .fees ul li:last-child {
+        margin-bottom: 0; }
+
+/* line 607, resources/assets/styles/layouts/_header.scss */
+.page.contact .forms {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  /* line 612, resources/assets/styles/layouts/_header.scss */
+  .page.contact .forms .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 24px 0 130px; }
+    /* line 618, resources/assets/styles/layouts/_header.scss */
+    .page.contact .forms .buttons button {
+      margin: 2px;
+      flex: 0 0 100%;
+      padding: 20px 10px;
+      height: auto;
+      width: auto;
+      text-align: left; }
+      /* line 626, resources/assets/styles/layouts/_header.scss */
+      .page.contact .forms .buttons button span {
+        line-height: 1; }
+      /* line 630, resources/assets/styles/layouts/_header.scss */
+      .page.contact .forms .buttons button .icon {
+        display: inline;
+        margin: 0 10px; }
+
+/* line 650, resources/assets/styles/layouts/_header.scss */
+footer {
+  border-top: solid 1px #909090;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center; }
+  /* line 656, resources/assets/styles/layouts/_header.scss */
+  footer strong {
+    font-size: 16px; }
+  /* line 660, resources/assets/styles/layouts/_header.scss */
+  footer .blocks.container {
+    padding: 0;
+    display: block; }
+    /* line 664, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.map {
+      height: 500px;
+      margin-bottom: 20px; }
+    /* line 670, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.info .left,
+    footer .blocks.container .block.info .right {
+      margin: 50px 0; }
+    /* line 676, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.info .left .phone {
+      font-family: 'conglomerate';
+      color: #CC9B7A;
+      font-size: 36px;
+      line-height: 48px; }
+    /* line 683, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.info .left .address {
+      margin: 16px 0 32px; }
+    /* line 689, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.info .right .brand {
+      display: block;
+      margin: 10px auto; }
+      /* line 693, resources/assets/styles/layouts/_header.scss */
+      footer .blocks.container .block.info .right .brand img {
+        width: 100%;
+        height: auto;
+        max-width: 200px; }
+  /* line 703, resources/assets/styles/layouts/_header.scss */
+  footer .menu {
+    background: #3a4736;
+    margin: 0;
+    padding: 20px 0; }
+    /* line 708, resources/assets/styles/layouts/_header.scss */
+    footer .menu .menu-item {
+      display: block;
+      line-height: 44px; }
+      /* line 712, resources/assets/styles/layouts/_header.scss */
+      footer .menu .menu-item a {
+        color: #b0b5af;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'conglomerate'; }
+      /* line 721, resources/assets/styles/layouts/_header.scss */
+      footer .menu .menu-item.current-menu-item a, footer .menu .menu-item:hover a {
+        color: #cc9b7a; }
+
+@media (min-width: 480px) {
+  /* line 736, resources/assets/styles/layouts/_header.scss */
+  .page.about .continued-education ul li {
+    flex: 0 0 50%; }
+    /* line 739, resources/assets/styles/layouts/_header.scss */
+    .page.about .continued-education ul li span {
+      padding: 24px 12px;
+      margin: 6px; } }
+
+@media (min-width: 540px) {
+  /* line 750, resources/assets/styles/layouts/_header.scss */
+  button {
+    width: 230px; }
+  /* line 754, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious {
+    padding: 50px 50px 115%; }
+    /* line 758, resources/assets/styles/layouts/_header.scss */
+    .blocks.subconscious .block.right {
+      padding: 0 50px; } }
+
+@media (min-width: 651px) {
+  /* line 766, resources/assets/styles/layouts/_header.scss */
+  header {
+    padding: 1.875rem 4.063rem; }
+  /* line 770, resources/assets/styles/layouts/_header.scss */
+  .hero {
+    height: 740px;
+    font-size: 60px;
+    line-height: 70px; }
+    /* line 775, resources/assets/styles/layouts/_header.scss */
+    .hero span {
+      width: 50%;
+      bottom: 100px;
+      right: 130px; }
+  /* line 782, resources/assets/styles/layouts/_header.scss */
+  blockquote.banner-quote {
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    color: #cc9b7a;
+    background: #ffe5d4;
+    padding: 80px;
+    font-size: 36px;
+    line-height: 43px; }
+    /* line 793, resources/assets/styles/layouts/_header.scss */
+    blockquote.banner-quote span {
+      font-family: conglomerate, serif;
+      max-width: 900px;
+      display: block;
+      margin: 0 auto; }
+    /* line 800, resources/assets/styles/layouts/_header.scss */
+    blockquote.banner-quote small {
+      font-size: 16px;
+      font-family: gopher; }
+  /* line 807, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious {
+    padding: 50px 35px;
+    background-position-x: -320px;
+    background-size: auto 110%;
+    height: 600px; }
+    /* line 813, resources/assets/styles/layouts/_header.scss */
+    .blocks.subconscious .block.right {
+      flex-basis: 68%;
+      padding-right: 0; }
+  /* line 819, resources/assets/styles/layouts/_header.scss */
+  .blocks button {
+    width: 230px; }
+  /* line 824, resources/assets/styles/layouts/_header.scss */
+  .blocks .block .content {
+    margin: 20%;
+    width: 60%; }
+  /* line 831, resources/assets/styles/layouts/_header.scss */
+  .testimonials {
+    padding: 100px 5%; }
+    /* line 834, resources/assets/styles/layouts/_header.scss */
+    .testimonials h2 {
+      margin: 0 0 100px; }
+    /* line 839, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .sa_hover_container {
+      padding: 0 60px; }
+    /* line 843, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-nav {
+      display: block !important; }
+  /* line 852, resources/assets/styles/layouts/_header.scss */
+  .page.about .continued-education ul li {
+    flex: 0 0 33%; }
+    /* line 855, resources/assets/styles/layouts/_header.scss */
+    .page.about .continued-education ul li span {
+      padding: 24px 12px;
+      margin: 6px; }
+  /* line 867, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .balance-methods ul li {
+    flex: 0 0 50%; }
+    /* line 870, resources/assets/styles/layouts/_header.scss */
+    .page.bodycode .balance-methods ul li span {
+      height: 350px; }
+  /* line 878, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .benefits ul {
+    column-count: 2; }
+  /* line 886, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .left {
+    flex: 1 1 50%;
+    padding-right: 32px; }
+  /* line 891, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .wpforms-container {
+    flex: 1 1 50%; }
+  /* line 898, resources/assets/styles/layouts/_header.scss */
+  .page.contact .forms .buttons button {
+    text-align: center;
+    margin: 2px;
+    flex: 0 0 29%; }
+    /* line 903, resources/assets/styles/layouts/_header.scss */
+    .page.contact .forms .buttons button .icon {
+      display: block;
+      margin: 0 auto 10px; }
+  /* line 913, resources/assets/styles/layouts/_header.scss */
+  footer .block.info {
+    display: flex;
+    justify-content: space-around; }
+    /* line 917, resources/assets/styles/layouts/_header.scss */
+    footer .block.info .left {
+      text-align: left; }
+    /* line 921, resources/assets/styles/layouts/_header.scss */
+    footer .block.info .right {
+      text-align: right; }
+      /* line 924, resources/assets/styles/layouts/_header.scss */
+      footer .block.info .right .brand {
+        margin-top: 10px; }
+  /* line 931, resources/assets/styles/layouts/_header.scss */
+  footer .menu .menu-item {
+    display: inline;
+    line-height: 44px;
+    margin: 0 16px; } }
+
+@media (min-width: 769px) {
+  /* line 943, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious .block.right {
+    padding-right: 4vw; }
+  /* line 951, resources/assets/styles/layouts/_header.scss */
+  .testimonials #sample_slider .sa_hover_container {
+    padding: 0 130px !important; }
+  /* line 958, resources/assets/styles/layouts/_header.scss */
+  .page.about .hero {
+    min-height: auto; }
+  /* line 963, resources/assets/styles/layouts/_header.scss */
+  .page.about .block .icon {
+    float: left;
+    margin: 0 100px 300px 0; }
+  /* line 971, resources/assets/styles/layouts/_header.scss */
+  .page.about .continued-education ul li {
+    flex: 0 0 25%; }
+    /* line 974, resources/assets/styles/layouts/_header.scss */
+    .page.about .continued-education ul li span {
+      padding: 24px 12px;
+      margin: 6px; }
+      /* line 978, resources/assets/styles/layouts/_header.scss */
+      .page.about .continued-education ul li span .icon {
+        bottom: 12px; }
+  /* line 989, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .benefits ul {
+    column-count: 3; }
+  /* line 997, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .left {
+    flex: 1 1 50%;
+    padding-right: 32px; }
+  /* line 1002, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .wpforms-container {
+    flex: 1 1 50%; }
+  /* line 1007, resources/assets/styles/layouts/_header.scss */
+  .page.contact .forms {
+    text-align: left; }
+    /* line 1011, resources/assets/styles/layouts/_header.scss */
+    .page.contact .forms .buttons button {
+      flex: 1 1 18%; }
+  /* line 1018, resources/assets/styles/layouts/_header.scss */
+  footer {
+    border-top: solid 1px #909090; }
+    /* line 1020, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container {
+      display: flex;
+      max-width: none;
+      flex-direction: row; }
+      /* line 1025, resources/assets/styles/layouts/_header.scss */
+      footer .blocks.container .block.info {
+        flex-direction: column;
+        max-width: 720px; }
+        /* line 1029, resources/assets/styles/layouts/_header.scss */
+        footer .blocks.container .block.info .left,
+        footer .blocks.container .block.info .right {
+          margin: 0 0 0 50px;
+          text-align: left; }
+      /* line 1036, resources/assets/styles/layouts/_header.scss */
+      footer .blocks.container .block.map {
+        margin-bottom: 0; } }
+
+@media (min-width: 993px) {
+  /* line 1045, resources/assets/styles/layouts/_header.scss */
+  header #btn-hamburger {
+    display: none; }
+  /* line 1049, resources/assets/styles/layouts/_header.scss */
+  header .nav-primary {
+    display: block; }
+  /* line 1054, resources/assets/styles/layouts/_header.scss */
+  .blocks {
+    flex-direction: row; }
+    /* line 1057, resources/assets/styles/layouts/_header.scss */
+    .blocks.subconscious {
+      background-size: contain;
+      background-position-x: -80px;
+      height: 640px; }
+      /* line 1062, resources/assets/styles/layouts/_header.scss */
+      .blocks.subconscious .block {
+        max-width: 460px;
+        padding: 0 4vw 0 0; }
+  /* line 1070, resources/assets/styles/layouts/_header.scss */
+  .page.about .hero {
+    background-position-y: center; }
+  /* line 1075, resources/assets/styles/layouts/_header.scss */
+  .page.about .block .icon {
+    float: none;
+    margin: 0 0 42px; }
+  /* line 1084, resources/assets/styles/layouts/_header.scss */
+  .page.about .continued-education ul li span {
+    padding: 24px;
+    margin: 12px; }
+    /* line 1088, resources/assets/styles/layouts/_header.scss */
+    .page.about .continued-education ul li span .icon {
+      bottom: 23px; }
+  /* line 1100, resources/assets/styles/layouts/_header.scss */
+  .page.bodycode .balance-methods ul li {
+    flex: 0 0 33%; }
+  /* line 1109, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .addresshours {
+    flex-direction: row; }
+  /* line 1113, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .address {
+    margin: 0 24px 24px 0; }
+  /* line 1117, resources/assets/styles/layouts/_header.scss */
+  .page.contact .contact-info .wpforms-container {
+    flex: 1 1 420px; }
+  /* line 1125, resources/assets/styles/layouts/_header.scss */
+  footer .blocks.container .block.info {
+    padding-top: 50px;
+    flex-direction: row; }
+    /* line 1129, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.info .left,
+    footer .blocks.container .block.info .right {
+      margin-left: 10px; }
+    /* line 1134, resources/assets/styles/layouts/_header.scss */
+    footer .blocks.container .block.info .right {
+      width: 40%;
+      padding-right: 50px; }
+      /* line 1138, resources/assets/styles/layouts/_header.scss */
+      footer .blocks.container .block.info .right .copyright {
+        margin-top: 2rem;
+        font-size: 10px;
+        text-align: right;
+        line-height: 1.5; }
+  /* line 1149, resources/assets/styles/layouts/_header.scss */
+  footer .menu .menu-item {
+    display: inline;
+    line-height: 44px;
+    margin: 0 32px; } }
+
+@media (min-width: 1201px) {
+  /* line 1160, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious {
+    height: 740px;
+    padding: 100px 2vw 100px 130px;
+    background-position-x: left; }
+    /* line 1165, resources/assets/styles/layouts/_header.scss */
+    .blocks.subconscious .block.right {
+      max-width: 460px; }
+  /* line 1174, resources/assets/styles/layouts/_header.scss */
+  footer .blocks.container .block.info .right {
+    width: auto; } }
+
+@media (min-width: 1441px) {
+  /* line 1184, resources/assets/styles/layouts/_header.scss */
+  .blocks.subconscious {
+    padding-right: 12vw; } }
+
+/* Icon 1 */
+/* line 1206, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-top: 17px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+/* line 1222, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #cc9b7a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+/* Icon 3 */
+/* line 1243, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger span:nth-child(1) {
+  top: 0px; }
+
+/* line 1247, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger span:nth-child(2),
+#btn-hamburger span:nth-child(3) {
+  top: 12px; }
+
+/* line 1252, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger span:nth-child(4) {
+  top: 24px; }
+
+/* line 1256, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+/* line 1262, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 1269, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* line 1276, resources/assets/styles/layouts/_header.scss */
+#btn-hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
 
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */
 body#tinymce {
