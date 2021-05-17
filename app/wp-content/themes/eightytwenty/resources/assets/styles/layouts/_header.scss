@@ -1,22 +1,31 @@
 @import url(https://use.typekit.net/zdy2qty.css);
 
-$logo-height: 63px;
-$margin-desktop: 130px;
-$margin-mobile: 30px;
+$bp-mobile: 480px;
+$bp-tablet-sm: 540px;
+$bp-tablet-md: 650px;
+$bp-tablet-lg: 768px;
+$bp-desktop-sm: 992px;
+$bp-desktop-md: 1200px;
+$bp-desktop-lg: 1440px;
+
+$logo-height: 3.938rem;
+$margin-desktop: 8.125rem;
+$margin-tablet: 5rem;
+$margin-mobile: 1.875rem;
 
 body {
   font-family: gopher, sans-serif;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 1.875rem;
   color: #4a4a4a;
 }
 
 .wrap {
-  margin-top: 117px;
+  margin-top: 7.313rem;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 75rem;
 }
 
 a {
@@ -35,21 +44,21 @@ a:hover {
 h2 {
   font-family: conglomerate, serif;
   color: #cc9b7a;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 3rem;
 
   &.heading {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
 button,
 .button {
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   border: 0;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.313rem;
   padding: 0;
   margin: 0;
   color: white;
@@ -66,7 +75,7 @@ button,
     background: #cc9b7a !important;
 
     &:hover {
-      background: darken(#cc9b7a, 5);
+      background: darken(#cc9b7a, 5) !important;
     }
   }
 }
@@ -79,12 +88,12 @@ button,
   font-family: 'conglomerate';
   position: relative;
 
-  height: 300px;
-  font-size: 30px;
-  line-height: 30px;
+  height: 18.75rem;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
 
   span {
-    width: calc(100% - ($margin-mobile*2));
+    width: calc(100% - (#{$margin-mobile} * 2));
     position: absolute;
     text-align: right;
 
@@ -108,12 +117,12 @@ header {
   }
 
   .brand {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 
      img {
-      height: 50px;
+      height: 3.125rem;
       width: auto;
-      margin-top: 7px;
+      margin-top: 0.438rem;
      }
   }
 
@@ -176,9 +185,9 @@ header {
     cursor: pointer;
 
     img {
-      width: 22px;
+      width: 1.375rem;
       height: auto;
-      margin: 23px 0;
+      margin: 1.438rem 0;
     }
   }
 
@@ -187,11 +196,11 @@ header {
       display: block;
       text-align: right;
       width: 100%;
-      padding: 16px 0;
+      padding: 1rem 0;
 
       a {
         padding: 0;
-        font-size: 18px;
+        font-size: 1.125rem;
         color: #cc9b7a;
       }
     }
@@ -209,26 +218,29 @@ blockquote.banner-quote {
   width: 100%;
   color: #cc9b7a;
   background: #ffe5d4;
-  padding: 30px;
-  font-size: 24px;
-  line-height: 32px;
+  padding: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
 
   span {
     font-family: conglomerate, serif;
-    max-width: 900px;
+    max-width: 56.25rem;
     display: block;
     margin: 0 auto;
   }
 
   small {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: gopher;
   }
 }
 
 .banner {
   background: white;
-  margin: $margin-desktop;
+  margin: calc(#{$margin-mobile} * 2) $margin-mobile;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
 #menu-main-menu {
@@ -240,7 +252,7 @@ header .nav li {
 
   a {
     padding: 0.5rem 1.5rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'conglomerate';
   }
 }
@@ -270,12 +282,22 @@ header .nav li {
        }
     }
 
+    &.img {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
     .content {
       width: 100%;
       padding: calc(#{$margin-mobile} * 2) $margin-mobile;
 
-      p {
-        margin: 16px 0 65px;
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      button,
+      .button {
+        margin-top: 4.063rem;
       }
     }
   }
@@ -316,6 +338,12 @@ header .nav li {
 ////////// * HYPNOTHERAPY * //////////
 
 .page.hypnotherapy {
+  .hero {
+    background-position-x: 0;
+
+
+  }
+
   .block.hypnotherapy {
     background: #3a4736;
     max-width: none;
@@ -327,8 +355,74 @@ header .nav li {
   .faq {
     margin-top: $margin-desktop;
     margin-bottom: $margin-desktop;
+
+
+
+
+
+    /* Accordion styles */
+    .tabs {
+      overflow: hidden;
+    }
+    .tab {
+      width: 100%;
+      color: #3a4736;
+      overflow: hidden;
+      margin-bottom: 0.625rem;
+      &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #ffefe5;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0;
+
+        &::after {
+          content: "\25BC";
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transition: all .35s;
+        }
+      }
+      &-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: #3a4736;
+        background: #ffefe5;
+        transition: all .35s;
+      }
+      &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: #ffefe5;
+        cursor: pointer;
+      }
+    }
+
+    // :checked
+    input {
+      display: none;
+
+      &:checked {
+        + .tab-label {
+          &::after {
+            transform: rotate(180deg);
+          }
+        }
+        ~ .tab-content {
+          max-height: 100vh;
+          padding: 1em;
+          background: #ffefe5;
+        }
+      }
+    }
   }
 }
+
 
 /* Accordion */
 
@@ -339,21 +433,17 @@ header .nav li {
     .ea-header {
       background: #FFEFE5;
 
-      &:hover {
-        background: darken(#cc9b7a, 5);
-      }
-
       a {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.875rem;
         font-weight: bold;
       }
     }
 
     .ea-body {
       p {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.875rem;
       }
     }
   }
@@ -390,11 +480,11 @@ header .nav li {
 
         span {
           display: block;
-          padding: 48px;
-          margin: 12px;
+          padding: 3rem;
+          margin: 0.75rem;
           height: auto;
-          font-size: 16px;
-          line-height: 30px;
+          font-size: 1rem;
+          line-height: 1.875rem;
           color: #CC9B7A;
           text-align: left;
           background: #FFEFE5;
@@ -409,11 +499,11 @@ header .nav li {
     ul {
       column-count: 1;
       column-fill: auto;
-      margin-bottom: 48px;
+      margin-bottom: 3rem;
 
       li {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.875rem;
       }
     }
   }
@@ -428,7 +518,7 @@ header .nav li {
   padding: calc(#{$margin-mobile} * 2) $margin-mobile;
 
   h2 {
-    margin: 0 0 24px;
+    margin: 0 0 1.5rem;
   }
 
   #sample_slider {
@@ -443,9 +533,10 @@ header .nav li {
       width: 100%;
       display: none !important;
 
-      button {
-        width: 46px !important;
-        height: 106px !important;
+      button,
+      .button {
+        width: 2.875rem !important;
+        height: 6.625rem !important;
         background: #cc9b7a !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
@@ -474,13 +565,14 @@ header .nav li {
     }
 
     .owl-dots {
-      button {
+      button,
+      .button {
         width: auto;
         height: auto;
         span {
           border-radius: 0 !important;
           width: calc(100vw/12) !important;
-          height: 5px !important;
+          height: 0.313rem !important;
           background: #ffe5d4 !important;
         }
 
@@ -496,14 +588,17 @@ header .nav li {
 
 .page.about {
   .hero {
-    min-height: 680px;
-    height: auto;
-    background-position-y: -80px;
+    min-height: 80vw;
+    background-position-y: 0;
   }
 
   .block {
+    &.img {
+      background-position-y: -5rem;
+    }
+
     .icon {
-      margin-bottom: 42px;
+      margin-bottom: 2.625rem;
     }
   }
 
@@ -518,8 +613,8 @@ header .nav li {
       padding: 0;
 
       li {
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 1rem;
+        line-height: 1.313rem;
         color: #CC9B7A;
         flex: 0 0 100%;
         font-weight: bold;
@@ -528,19 +623,19 @@ header .nav li {
         span {
           position: relative;
           display: block;
-          border: solid 2px #CC9B7A;
-          padding: 24px;
-          margin: 12px;
-          height: 195px;
+          border: solid 0.125rem #CC9B7A;
+          padding: 1.5rem;
+          margin: 0.75rem;
+          height: 12.188rem;
           text-align: center;
 
           .icon {
             display: block;
-            width: 23px;
+            width: 1.438rem;
             height: auto;
             position: absolute;
-            left: calc(50% - 23px/2);
-            bottom: 23px;
+            left: calc(50% - 1.438rem/2);
+            bottom: 1.438rem;
           }
         }
       }
@@ -554,7 +649,7 @@ header .nav li {
 
 .page.contact {
   h2 {
-    margin: $margin-desktop 0 30px;
+    margin: $margin-desktop 0 1.875rem;
   }
 
   .contact-info {
@@ -575,22 +670,22 @@ header .nav li {
 
     .addresshours {
       display: flex;
-      margin: 40px 0;
+      margin: 2.5rem 0;
       flex-direction: column;
     }
 
     .address {
-      margin: 0 0 24px 0;
+      margin: 0 0 1.5rem 0;
     }
 
     .fees {
       ul {
         padding: 0;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
         list-style-type: none;
 
         li {
-          margin: 24px 0;
+          margin: 1.5rem 0;
 
           &:first-child {
             margin-top: 0;
@@ -613,12 +708,13 @@ header .nav li {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 24px 0 $margin-desktop;
+      margin: 1.5rem 0 $margin-desktop;
 
-      button {
-        margin: 2px;
+      button,
+      .button {
+        margin: 0.125rem;
         flex: 0 0 100%;
-        padding: 20px 10px;
+        padding: 1.25rem 0.625rem;
         height: auto;
         width: auto;
         text-align: left;
@@ -629,7 +725,7 @@ header .nav li {
 
         .icon {
           display: inline;
-          margin: 0 10px;
+          margin: 0 0.625rem;
         }
       }
     }
@@ -641,6 +737,13 @@ header .nav li {
     @extend .button;
     @extend .gold;
   }
+
+  select {
+    width: 100%;
+    height: 3.75rem;
+    display: block;
+    margin: 5rem 0 1.25rem;
+  }
 }
 
 
@@ -648,13 +751,13 @@ header .nav li {
 
 
 footer {
-  border-top: solid 1px #909090;
-  font-size: 13px;
-  line-height: 20px;
+  border-top: solid 0.063rem #909090;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
   text-align: center;
 
   strong {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .blocks.container {
@@ -662,38 +765,38 @@ footer {
     display: block;
 
     .block.map {
-      height: 500px;
-      margin-bottom: 20px;
+      height: 31.25rem;
+      margin-bottom: 1.25rem;
     }
 
     .block.info {
       .left,
       .right {
-        margin: 50px 0;
+        margin: 3.125rem 0;
       }
 
       .left {
         .phone {
           font-family: 'conglomerate';
           color: #CC9B7A;
-          font-size: 36px;
-          line-height: 48px;
+          font-size: 2.25rem;
+          line-height: 3rem;
         }
 
         .address {
-          margin: 16px 0 32px;
+          margin: 1rem 0 2rem;
         }
       }
 
       .right {
         .brand {
           display: block;
-          margin: 10px auto;
+          margin: 0.625rem auto;
 
           img {
             width: 100%;
             height: auto;
-            max-width: 200px;
+            max-width: 12.5rem;
           }
         }
       }
@@ -703,16 +806,16 @@ footer {
   .menu {
     background: #3a4736;
     margin: 0;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 
     .menu-item {
       display: block;
-      line-height: 44px;
+      line-height: 2.75rem;
 
       a {
         color: #b0b5af;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 1.25rem;
         font-family: 'conglomerate';
       }
 
@@ -729,7 +832,7 @@ footer {
 
 
 
-@media (min-width: 480px) {
+@media (min-width: $bp-mobile) {
   .page.about {
     .continued-education {
       ul {
@@ -737,8 +840,8 @@ footer {
           flex: 0 0 50%;
 
           span {
-            padding: 24px 12px;
-            margin: 6px;
+            padding: 1.5rem 0.75rem;
+            margin: 0.375rem;
           }
         }
       }
@@ -746,35 +849,47 @@ footer {
   }
 }
 
-@media (min-width: 540px) {
-  button {
-    width: 230px;
+@media (min-width: ($bp-tablet-sm + 1)) {
+  .banner {
+    text-align: left;
+    margin: $margin-tablet;
+  }
+
+  button,
+  .button {
+    width: 14.375rem;
+  }
+
+  .page.contact {
+    select {
+      width: auto;
+    }
   }
 
   .blocks.subconscious {
-    padding: 50px 50px 115%;
+    padding: 3.125rem 3.125rem 115%;
 
     .block {
       &.right {
-        padding: 0 50px;
+        padding: 0 3.125rem;
       }
     }
   }
 }
 
-@media (min-width: 651px) {
+@media (min-width: ($bp-tablet-md + 1)) {
   header {
     padding: 1.875rem 4.063rem;
   }
 
   .hero {
-    height: 740px;
-    font-size: 60px;
-    line-height: 70px;
+    height: 46.25rem;
+    font-size: 3.75rem;
+    line-height: 4.375rem;
 
     span {
       width: 50%;
-      bottom: 100px;
+      bottom: 6.25rem;
       right: $margin-desktop;
     }
   }
@@ -786,29 +901,29 @@ footer {
     width: 100%;
     color: #cc9b7a;
     background: #ffe5d4;
-    padding: 80px;
-    font-size: 36px;
-    line-height: 43px;
+    padding: $margin-tablet;
+    font-size: 2.25rem;
+    line-height: 2.688rem;
 
     span {
       font-family: conglomerate, serif;
-      max-width: 900px;
+      max-width: 56.25rem;
       display: block;
       margin: 0 auto;
     }
 
     small {
-      font-size: 16px;
+      font-size: 1rem;
       font-family: gopher;
     }
   }
 
   .blocks {
     &.subconscious {
-      padding: 50px 35px;
-      background-position-x: -320px;
+      padding: 3.125rem 2.188rem;
+      background-position-x: -20rem;
       background-size: auto 110%;
-      height: 600px;
+      height: 37.5rem;
 
       .block.right {
         flex-basis: 68%;
@@ -816,28 +931,28 @@ footer {
       }
     }
 
-    button {
-      width: 230px;
+    button,
+    .button {
+      width: 14.375rem;
     }
 
     .block {
       .content {
-        margin: 20%;
-        width: 60%;
+        padding: $margin-desktop;
       }
     }
   }
 
   .testimonials {
-    padding: 100px 5%;
+    padding: 6.25rem 5%;
 
     h2 {
-      margin: 0 0 100px;
+      margin: 0 0 6.25rem;
     }
 
     #sample_slider {
       .sa_hover_container {
-        padding: 0 60px;
+        padding: 0 3.75rem;
       }
 
       .owl-nav {
@@ -853,8 +968,8 @@ footer {
           flex: 0 0 33%;
 
           span {
-            padding: 24px 12px;
-            margin: 6px;
+            padding: 1.5rem 0.75rem;
+            margin: 0.375rem;
           }
         }
       }
@@ -868,7 +983,7 @@ footer {
           flex: 0 0 50%;
 
           span {
-            height: 350px;
+            height: 21.875rem;
           }
         }
       }
@@ -885,7 +1000,7 @@ footer {
     .contact-info {
       .left {
         flex: 1 1 50%;
-        padding-right: 32px;
+        padding-right: 2rem;
       }
 
       .wpforms-container {
@@ -897,12 +1012,12 @@ footer {
       .buttons {
         button {
           text-align: center;
-          margin: 2px;
+          margin: 0.125rem;
           flex: 0 0 29%;
 
           .icon {
             display: block;
-            margin: 0 auto 10px;
+            margin: 0 auto 0.625rem;
           }
         }
       }
@@ -922,7 +1037,7 @@ footer {
         text-align: right;
 
         .brand {
-          margin-top: 10px;
+          margin-top: 0.625rem;
         }
       }
     }
@@ -930,14 +1045,14 @@ footer {
     .menu {
       .menu-item {
         display: inline;
-        line-height: 44px;
-        margin: 0 16px;
+        line-height: 2.75rem;
+        margin: 0 1rem;
       }
     }
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: ($bp-tablet-lg + 1)) {
   .blocks {
     &.subconscious {
       .block.right {
@@ -955,14 +1070,10 @@ footer {
   }
 
   .page.about {
-    .hero {
-      min-height: auto;
-    }
-
     .block {
       .icon {
         float: left;
-        margin: 0 100px 300px 0;
+        margin: 0 6.25rem 18.75rem 0;
       }
     }
 
@@ -972,11 +1083,11 @@ footer {
           flex: 0 0 25%;
 
           span {
-            padding: 24px 12px;
-            margin: 6px;
+            padding: 1.5rem 0.75rem;
+            margin: 0.375rem;
 
             .icon {
-              bottom: 12px;
+              bottom: 0.75rem;
             }
           }
         }
@@ -996,7 +1107,7 @@ footer {
     .contact-info {
       .left {
         flex: 1 1 50%;
-        padding-right: 32px;
+        padding-right: 2rem;
       }
 
       .wpforms-container {
@@ -1016,7 +1127,7 @@ footer {
   }
 
   footer {
-    border-top: solid 1px #909090;
+    border-top: solid 0.063rem #909090;
     .blocks.container { // should kill class from markup altogether
       display: flex;
       max-width: none;
@@ -1024,11 +1135,11 @@ footer {
 
       .block.info {
         flex-direction: column;
-        max-width: 720px; //compensate for container having no max-width, reason is so map goes flush with left edge of window
+        max-width: 45rem; //compensate for container having no max-width, reason is so map goes flush with left edge of window
 
         .left,
         .right {
-          margin: 0 0 0 50px;
+          margin: 0 0 0 3.125rem;
           text-align: left;
         }
       }
@@ -1040,7 +1151,7 @@ footer {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: ($bp-desktop-sm + 1)) {
   header {
     #btn-hamburger {
       display: none;
@@ -1051,16 +1162,28 @@ footer {
     }
   }
 
+  .banner {
+    margin: $margin-desktop;
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
   .blocks {
     flex-direction: row;
 
+    .block {
+      .content {
+        padding: $margin-tablet;
+      }
+    }
+
     &.subconscious {
       background-size: contain;
-      background-position-x: -80px;
-      height: 640px;
+      background-position-x: -5rem;
+      height: 40rem;
 
       .block {
-        max-width: 460px;
+        max-width: 28.75rem;
         padding: 0 4vw 0 0;
       }
     }
@@ -1072,9 +1195,13 @@ footer {
     }
 
     .block {
+      &.img {
+        background-position-y: 0;
+      }
+
       .icon {
         float: none;
-        margin: 0 0 42px;
+        margin: 0 0 2.625rem;
       }
     }
 
@@ -1082,11 +1209,11 @@ footer {
       ul {
         li {
           span {
-            padding: 24px;
-            margin: 12px;
+            padding: 1.5rem;
+            margin: 0.75rem;
 
             .icon {
-              bottom: 23px;
+              bottom: 1.438rem;
             }
           }
         }
@@ -1111,11 +1238,11 @@ footer {
       }
 
       .address {
-        margin: 0 24px 24px 0;
+        margin: 0 1.5rem 1.5rem 0;
       }
 
       .wpforms-container {
-        flex: 1 1 420px;
+        flex: 1 1 26.25rem;
       }
     }
   }
@@ -1123,21 +1250,21 @@ footer {
   footer {
     .blocks.container {
       .block.info {
-        padding-top: 50px;
+        padding-top: 3.125rem;
         flex-direction: row;
 
         .left,
         .right {
-          margin-left: 10px;
+          margin-left: 0.625rem;
         }
 
         .right {
           width: 40%;
-          padding-right: 50px;
+          padding-right: 3.125rem;
 
           .copyright {
             margin-top: 2rem;
-            font-size: 10px;
+            font-size: 0.625rem;
             text-align: right;
             line-height: 1.5;
           }
@@ -1148,22 +1275,28 @@ footer {
     .menu {
       .menu-item {
         display: inline;
-        line-height: 44px;
-        margin: 0 32px;
+        line-height: 2.75rem;
+        margin: 0 2rem;
       }
     }
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: ($bp-desktop-md + 1)) {
   .blocks {
+    .block {
+      .content {
+        padding: $margin-desktop;
+      }
+    }
+
     &.subconscious {
-      height: 740px;
-      padding: 100px 2vw 100px $margin-desktop;
+      height: 46.25rem;
+      padding: 6.25rem 2vw 6.25rem $margin-desktop;
       background-position-x: left;
 
       .block.right {
-        max-width: 460px;
+        max-width: 28.75rem;
       }
     }
   }
@@ -1179,7 +1312,7 @@ footer {
   }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: ($bp-desktop-lg + 1)) {
   .blocks {
     &.subconscious {
       padding-right: 12vw;
@@ -1204,10 +1337,11 @@ footer {
 /* Icon 1 */
 
 #btn-hamburger {
-  width: 30px;
-  height: 30px;
+  background: transparent;
+  width: 1.875rem;
+  height: 1.875rem;
   position: relative;
-  margin-top: 17px;
+  margin-top: 1.063rem;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -1222,10 +1356,10 @@ footer {
 #btn-hamburger span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 0.125rem;
   width: 100%;
   background: #cc9b7a;
-  border-radius: 9px;
+  border-radius: 0.563rem;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -1241,20 +1375,20 @@ footer {
 /* Icon 3 */
 
 #btn-hamburger span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 #btn-hamburger span:nth-child(2),
 #btn-hamburger span:nth-child(3) {
-  top: 12px;
+  top: 0.75rem;
 }
 
 #btn-hamburger span:nth-child(4) {
-  top: 24px;
+  top: 1.5rem;
 }
 
 #btn-hamburger.open span:nth-child(1) {
-  top: 18px;
+  top: 1.125rem;
   width: 0%;
   left: 50%;
 }
@@ -1274,7 +1408,7 @@ footer {
 }
 
 #btn-hamburger.open span:nth-child(4) {
-  top: 18px;
+  top: 1.125rem;
   width: 0%;
   left: 50%;
 }

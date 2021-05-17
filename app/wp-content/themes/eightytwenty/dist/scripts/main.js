@@ -216,10 +216,15 @@ Router.prototype.loadEvents = function loadEvents () {
 /* WEBPACK VAR INJECTION */(function($) {/* harmony default export */ __webpack_exports__["a"] = ({
   init: function init() {
     // JavaScript to be fired on all pages
-    $('#btn-hamburger').click(function() {
-      $('.nav-mobile').toggleClass('expanded');
-      $(this).toggleClass('open');
-    });
+    var handleHamburgerMenu = function(e) {
+
+      if (e.type==='click') {
+        $('.nav-mobile').toggleClass('expanded');
+        $(this).toggleClass('open');
+      }
+    }
+    
+    $('#btn-hamburger').on('click', handleHamburgerMenu);
   },
   finalize: function finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

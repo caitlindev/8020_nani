@@ -12,7 +12,7 @@
 <h2 class="banner">Hypnotherapy is a form of therapy that uses the power of suggestion to help clients bring about positive behavior changes while under hypnosis. Hypnosis is a trance-like state where a person’s focus, attention, and concentration are heightened, and they experience increased suggestibility.</h2>
 
 <div class="blocks">
-  <div class="block left hero" style="background-image: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/03/zen-garden-photo.jpg)"></div>
+  <div class="block left img" style="background-image: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/03/zen-garden-photo.jpg)"></div>
 
   <div class="block right gold">
     <div class="content">
@@ -27,12 +27,26 @@
       <p>Sometimes hypnosis is described as a sleep-like state, where people are not conscious or are “zoned out,” but more accurately, they are in a state of “hyper-awareness,” and are very much “in the zone!”  Athletes and video gamers are examples of being “in the zone.” They can become so focused, that they do not hear their names being called or notice anything other than the objects of their concentration. The subconscious mind is much more receptive to suggestions in this heightened state of awareness, and therefore, more likely to accept suggestions for positive changes.  </p>
     </div>
   </div>
-  <div class="block right hero" style="background: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/03/meditation-photo.jpg)"></div>
+  <div class="block right img" style="background-image: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/03/meditation-photo.jpg)"></div>
 </div>
 
 <div class="faq container">
   <h2 class="heading">Frequently Asked Questions</h2>
-  <?php echo do_shortcode('[sp_easyaccordion id="63"]'); ?>
+
+  <div class="tabs">
+      <?php
+      if (have_rows('faq')):
+        while ( have_rows('faq') ) : the_row(); $count++;
+          echo '<div class="tab">';
+          echo '<input type="checkbox" id="qa'.$count.'">';
+          echo '<label class="tab-label" for="qa'.$count.'">'.get_sub_field("question").'</label>';
+          echo '<div class="tab-content">'.get_sub_field("answer").'</div>';
+          echo '</div>';
+        endwhile;
+      endif;
+      ?>
+    </div>
+  </div>
 </div>
 
 @endsection

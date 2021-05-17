@@ -9511,72 +9511,72 @@ a.text-dark:hover, a.text-dark:focus {
 
 /** Captions */
 /** Text meant only for screen readers */
-/* line 7, resources/assets/styles/layouts/_header.scss */
+/* line 16, resources/assets/styles/layouts/_header.scss */
 body {
   font-family: gopher, sans-serif;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 1.875rem;
   color: #4a4a4a; }
 
-/* line 14, resources/assets/styles/layouts/_header.scss */
+/* line 23, resources/assets/styles/layouts/_header.scss */
 .wrap {
-  margin-top: 117px; }
+  margin-top: 7.313rem; }
 
-/* line 18, resources/assets/styles/layouts/_header.scss */
+/* line 27, resources/assets/styles/layouts/_header.scss */
 .container {
-  max-width: 1200px; }
+  max-width: 75rem; }
 
-/* line 22, resources/assets/styles/layouts/_header.scss */
+/* line 31, resources/assets/styles/layouts/_header.scss */
 a {
   color: #CC9B7A; }
-  /* line 25, resources/assets/styles/layouts/_header.scss */
+  /* line 34, resources/assets/styles/layouts/_header.scss */
   a:hover {
     color: #c58d68; }
 
-/* line 30, resources/assets/styles/layouts/_header.scss */
+/* line 39, resources/assets/styles/layouts/_header.scss */
 a:hover {
   color: #cc9b7a;
   text-decoration: none; }
 
-/* line 35, resources/assets/styles/layouts/_header.scss */
+/* line 44, resources/assets/styles/layouts/_header.scss */
 h2 {
   font-family: conglomerate, serif;
   color: #cc9b7a;
-  font-size: 36px;
-  line-height: 48px; }
-  /* line 41, resources/assets/styles/layouts/_header.scss */
+  font-size: 2.25rem;
+  line-height: 3rem; }
+  /* line 50, resources/assets/styles/layouts/_header.scss */
   h2.heading {
-    margin-bottom: 40px; }
+    margin-bottom: 2.5rem; }
 
-/* line 46, resources/assets/styles/layouts/_header.scss */
+/* line 55, resources/assets/styles/layouts/_header.scss */
 button,
 .button,
 .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
 .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
 .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button {
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   border: 0;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.313rem;
   padding: 0;
   margin: 0;
   color: white; }
-  /* line 57, resources/assets/styles/layouts/_header.scss */
+  /* line 66, resources/assets/styles/layouts/_header.scss */
   button.green,
   .button.green,
   .page.contact div.wpforms-container-full .wpforms-form input.green[type=submit],
   .page.contact div.wpforms-container-full .wpforms-form button.green[type=submit],
   .page.contact div.wpforms-container-full .wpforms-form .green.wpforms-page-button {
     background: #3a4736; }
-    /* line 60, resources/assets/styles/layouts/_header.scss */
+    /* line 69, resources/assets/styles/layouts/_header.scss */
     button.green:hover,
     .button.green:hover,
     .page.contact div.wpforms-container-full .wpforms-form input.green:hover[type=submit],
     .page.contact div.wpforms-container-full .wpforms-form button.green:hover[type=submit],
     .page.contact div.wpforms-container-full .wpforms-form .green.wpforms-page-button:hover {
       background: #2e392b; }
-  /* line 65, resources/assets/styles/layouts/_header.scss */
+  /* line 74, resources/assets/styles/layouts/_header.scss */
   button.gold,
   .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
   .page.contact div.wpforms-container-full .wpforms-form button.wpforms-page-button,
@@ -9585,7 +9585,7 @@ button,
   .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
   .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button {
     background: #cc9b7a !important; }
-    /* line 68, resources/assets/styles/layouts/_header.scss */
+    /* line 77, resources/assets/styles/layouts/_header.scss */
     button.gold:hover,
     .page.contact div.wpforms-container-full .wpforms-form button:hover[type=submit],
     .page.contact div.wpforms-container-full .wpforms-form button.wpforms-page-button:hover,
@@ -9593,9 +9593,9 @@ button,
     .page.contact div.wpforms-container-full .wpforms-form input:hover[type=submit],
     .page.contact div.wpforms-container-full .wpforms-form button:hover[type=submit],
     .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
-      background: #c58d68; }
+      background: #c58d68 !important; }
 
-/* line 74, resources/assets/styles/layouts/_header.scss */
+/* line 83, resources/assets/styles/layouts/_header.scss */
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -9603,64 +9603,64 @@ button,
   color: white;
   font-family: 'conglomerate';
   position: relative;
-  height: 300px;
-  font-size: 30px;
-  line-height: 30px; }
-  /* line 86, resources/assets/styles/layouts/_header.scss */
+  height: 18.75rem;
+  font-size: 1.875rem;
+  line-height: 1.875rem; }
+  /* line 95, resources/assets/styles/layouts/_header.scss */
   .hero span {
-    width: calc(100% - ($margin-mobile*2));
+    width: calc(100% - (1.875rem * 2));
     position: absolute;
     text-align: right;
-    bottom: 30px;
-    right: 30px; }
+    bottom: 1.875rem;
+    right: 1.875rem; }
 
-/* line 96, resources/assets/styles/layouts/_header.scss */
+/* line 105, resources/assets/styles/layouts/_header.scss */
 header {
-  padding: 1.875rem 30px;
+  padding: 1.875rem 1.875rem;
   background-color: #3a4736;
   position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100%; }
-  /* line 105, resources/assets/styles/layouts/_header.scss */
+  /* line 114, resources/assets/styles/layouts/_header.scss */
   header .container {
     display: flex;
     flex-direction: row; }
-  /* line 110, resources/assets/styles/layouts/_header.scss */
+  /* line 119, resources/assets/styles/layouts/_header.scss */
   header .brand {
-    margin-right: 20px; }
-    /* line 113, resources/assets/styles/layouts/_header.scss */
+    margin-right: 1.25rem; }
+    /* line 122, resources/assets/styles/layouts/_header.scss */
     header .brand img {
-      height: 50px;
+      height: 3.125rem;
       width: auto;
-      margin-top: 7px; }
-  /* line 125, resources/assets/styles/layouts/_header.scss */
+      margin-top: 0.438rem; }
+  /* line 134, resources/assets/styles/layouts/_header.scss */
   header .nav-primary ul li.current_page_item a, header .nav-primary ul li:hover a {
     color: #b0b5af; }
-  /* line 133, resources/assets/styles/layouts/_header.scss */
+  /* line 142, resources/assets/styles/layouts/_header.scss */
   header .brand,
   header .nav-primary {
     flex: 1 1 auto; }
-    /* line 137, resources/assets/styles/layouts/_header.scss */
+    /* line 146, resources/assets/styles/layouts/_header.scss */
     header .brand img,
     header .brand ul,
     header .brand li,
     header .nav-primary img,
     header .nav-primary ul,
     header .nav-primary li {
-      line-height: 63px; }
-  /* line 144, resources/assets/styles/layouts/_header.scss */
+      line-height: 3.938rem; }
+  /* line 153, resources/assets/styles/layouts/_header.scss */
   header #btn-hamburger {
     cursor: pointer;
     display: block; }
-  /* line 149, resources/assets/styles/layouts/_header.scss */
+  /* line 158, resources/assets/styles/layouts/_header.scss */
   header .nav-primary {
     display: none; }
 
-/* line 154, resources/assets/styles/layouts/_header.scss */
+/* line 163, resources/assets/styles/layouts/_header.scss */
 .nav-mobile {
-  padding: 130px 4.063rem;
+  padding: 8.125rem 4.063rem;
   position: fixed;
   z-index: 999;
   background: #3a4736;
@@ -9668,40 +9668,40 @@ header {
   left: 0;
   top: -100%;
   transition: all 0.5s ease; }
-  /* line 164, resources/assets/styles/layouts/_header.scss */
+  /* line 173, resources/assets/styles/layouts/_header.scss */
   .nav-mobile .container {
     display: block; }
-  /* line 168, resources/assets/styles/layouts/_header.scss */
+  /* line 177, resources/assets/styles/layouts/_header.scss */
   .nav-mobile.expanded {
     top: 0;
     transition: all 0.5s ease; }
-  /* line 173, resources/assets/styles/layouts/_header.scss */
+  /* line 182, resources/assets/styles/layouts/_header.scss */
   .nav-mobile .btn-close {
     text-align: right;
     display: block;
     cursor: pointer; }
-    /* line 178, resources/assets/styles/layouts/_header.scss */
+    /* line 187, resources/assets/styles/layouts/_header.scss */
     .nav-mobile .btn-close img {
-      width: 22px;
+      width: 1.375rem;
       height: auto;
-      margin: 23px 0; }
-  /* line 186, resources/assets/styles/layouts/_header.scss */
+      margin: 1.438rem 0; }
+  /* line 195, resources/assets/styles/layouts/_header.scss */
   .nav-mobile .nav li {
     display: block;
     text-align: right;
     width: 100%;
-    padding: 16px 0; }
-    /* line 192, resources/assets/styles/layouts/_header.scss */
+    padding: 1rem 0; }
+    /* line 201, resources/assets/styles/layouts/_header.scss */
     .nav-mobile .nav li a {
       padding: 0;
-      font-size: 18px;
+      font-size: 1.125rem;
       color: #cc9b7a; }
 
-/* line 201, resources/assets/styles/layouts/_header.scss */
+/* line 210, resources/assets/styles/layouts/_header.scss */
 ul, p {
   margin: 0; }
 
-/* line 205, resources/assets/styles/layouts/_header.scss */
+/* line 214, resources/assets/styles/layouts/_header.scss */
 blockquote.banner-quote {
   font-style: italic;
   text-align: center;
@@ -9709,89 +9709,110 @@ blockquote.banner-quote {
   width: 100%;
   color: #cc9b7a;
   background: #ffe5d4;
-  padding: 30px;
-  font-size: 24px;
-  line-height: 32px; }
-  /* line 216, resources/assets/styles/layouts/_header.scss */
+  padding: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 2.25rem; }
+  /* line 225, resources/assets/styles/layouts/_header.scss */
   blockquote.banner-quote span {
     font-family: conglomerate, serif;
-    max-width: 900px;
+    max-width: 56.25rem;
     display: block;
     margin: 0 auto; }
-  /* line 223, resources/assets/styles/layouts/_header.scss */
+  /* line 232, resources/assets/styles/layouts/_header.scss */
   blockquote.banner-quote small {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: gopher; }
 
-/* line 229, resources/assets/styles/layouts/_header.scss */
+/* line 238, resources/assets/styles/layouts/_header.scss */
 .banner {
   background: white;
-  margin: 130px; }
+  margin: calc(1.875rem * 2) 1.875rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center; }
 
-/* line 234, resources/assets/styles/layouts/_header.scss */
+/* line 246, resources/assets/styles/layouts/_header.scss */
 #menu-main-menu {
   justify-content: flex-end; }
 
-/* line 241, resources/assets/styles/layouts/_header.scss */
+/* line 253, resources/assets/styles/layouts/_header.scss */
 header .nav li a {
   padding: 0.5rem 1.5rem;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'conglomerate'; }
 
-/* line 248, resources/assets/styles/layouts/_header.scss */
+/* line 260, resources/assets/styles/layouts/_header.scss */
 .blocks {
   display: flex;
   flex-direction: column; }
-  /* line 252, resources/assets/styles/layouts/_header.scss */
+  /* line 264, resources/assets/styles/layouts/_header.scss */
   .blocks .block {
     flex: 0 1 50vw; }
-    /* line 255, resources/assets/styles/layouts/_header.scss */
+    /* line 267, resources/assets/styles/layouts/_header.scss */
     .blocks .block.green {
       background: #3a4736;
       color: #cc9b7a; }
-      /* line 259, resources/assets/styles/layouts/_header.scss */
+      /* line 271, resources/assets/styles/layouts/_header.scss */
       .blocks .block.green h2 {
         color: #cc9b7a; }
-    /* line 264, resources/assets/styles/layouts/_header.scss */
+    /* line 276, resources/assets/styles/layouts/_header.scss */
     .blocks .block.gold, .blocks .page.contact div.wpforms-container-full .wpforms-form input.block[type=submit], .page.contact div.wpforms-container-full .wpforms-form .blocks input.block[type=submit],
     .blocks .page.contact div.wpforms-container-full .wpforms-form button.block[type=submit], .page.contact div.wpforms-container-full .wpforms-form .blocks button.block[type=submit],
     .blocks .page.contact div.wpforms-container-full .wpforms-form .block.wpforms-page-button, .page.contact div.wpforms-container-full .wpforms-form .blocks .block.wpforms-page-button {
       background: #cc9b7a;
       color: #3a4736; }
-      /* line 268, resources/assets/styles/layouts/_header.scss */
+      /* line 280, resources/assets/styles/layouts/_header.scss */
       .blocks .block.gold h2, .blocks .page.contact div.wpforms-container-full .wpforms-form input.block[type=submit] h2, .page.contact div.wpforms-container-full .wpforms-form .blocks input.block[type=submit] h2, .blocks .page.contact div.wpforms-container-full .wpforms-form button.block[type=submit] h2, .page.contact div.wpforms-container-full .wpforms-form .blocks button.block[type=submit] h2, .blocks .page.contact div.wpforms-container-full .wpforms-form .block.wpforms-page-button h2, .page.contact div.wpforms-container-full .wpforms-form .blocks .block.wpforms-page-button h2 {
         color: #3a4736; }
-    /* line 273, resources/assets/styles/layouts/_header.scss */
+    /* line 285, resources/assets/styles/layouts/_header.scss */
+    .blocks .block.img {
+      background-repeat: no-repeat;
+      background-size: cover; }
+    /* line 290, resources/assets/styles/layouts/_header.scss */
     .blocks .block .content {
       width: 100%;
-      padding: calc(30px * 2) 30px; }
-      /* line 277, resources/assets/styles/layouts/_header.scss */
-      .blocks .block .content p {
-        margin: 16px 0 65px; }
+      padding: calc(1.875rem * 2) 1.875rem; }
+      /* line 294, resources/assets/styles/layouts/_header.scss */
+      .blocks .block .content h2 {
+        margin-bottom: 1rem; }
+      /* line 298, resources/assets/styles/layouts/_header.scss */
+      .blocks .block .content button,
+      .blocks .block .content .button,
+      .blocks .block .content .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+      .page.contact div.wpforms-container-full .wpforms-form .blocks .block .content input[type=submit],
+      .blocks .block .content .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+      .page.contact div.wpforms-container-full .wpforms-form .blocks .block .content button[type=submit],
+      .blocks .block .content .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button,
+      .page.contact div.wpforms-container-full .wpforms-form .blocks .block .content .wpforms-page-button {
+        margin-top: 4.063rem; }
 
-/* line 288, resources/assets/styles/layouts/_header.scss */
+/* line 310, resources/assets/styles/layouts/_header.scss */
 .blocks.subconscious {
-  padding: 30px 30px 115%;
+  padding: 1.875rem 1.875rem 115%;
   background: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/female-silhouette-photo-e1614099371467.png);
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: 95%; }
-  /* line 295, resources/assets/styles/layouts/_header.scss */
+  /* line 317, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious .container {
     display: flex;
     justify-content: flex-end; }
-  /* line 300, resources/assets/styles/layouts/_header.scss */
+  /* line 322, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious .block {
     padding: 0; }
-    /* line 303, resources/assets/styles/layouts/_header.scss */
+    /* line 325, resources/assets/styles/layouts/_header.scss */
     .blocks.subconscious .block.right {
       flex-basis: auto;
       padding: 0; }
-      /* line 307, resources/assets/styles/layouts/_header.scss */
+      /* line 329, resources/assets/styles/layouts/_header.scss */
       .blocks.subconscious .block.right p {
         margin-top: 10vw; }
 
-/* line 319, resources/assets/styles/layouts/_header.scss */
+/* line 341, resources/assets/styles/layouts/_header.scss */
+.page.hypnotherapy .hero {
+  background-position-x: 0; }
+
+/* line 347, resources/assets/styles/layouts/_header.scss */
 .page.hypnotherapy .block.hypnotherapy {
   background: #3a4736;
   max-width: none;
@@ -9799,341 +9820,488 @@ header .nav li a {
   height: auto;
   color: #cc9b7a; }
 
-/* line 327, resources/assets/styles/layouts/_header.scss */
+/* line 355, resources/assets/styles/layouts/_header.scss */
 .page.hypnotherapy .faq {
-  margin-top: 130px;
-  margin-bottom: 130px; }
+  margin-top: 8.125rem;
+  margin-bottom: 8.125rem;
+  /* Accordion styles */ }
+  /* line 364, resources/assets/styles/layouts/_header.scss */
+  .page.hypnotherapy .faq .tabs {
+    overflow: hidden; }
+  /* line 367, resources/assets/styles/layouts/_header.scss */
+  .page.hypnotherapy .faq .tab {
+    width: 100%;
+    color: #3a4736;
+    overflow: hidden;
+    margin-bottom: 0.625rem; }
+    /* line 372, resources/assets/styles/layouts/_header.scss */
+    .page.hypnotherapy .faq .tab-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #ffefe5;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0; }
+      /* line 381, resources/assets/styles/layouts/_header.scss */
+      .page.hypnotherapy .faq .tab-label::after {
+        content: "\25BC";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s; }
+    /* line 389, resources/assets/styles/layouts/_header.scss */
+    .page.hypnotherapy .faq .tab-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #3a4736;
+      background: #ffefe5;
+      transition: all .35s; }
+    /* line 396, resources/assets/styles/layouts/_header.scss */
+    .page.hypnotherapy .faq .tab-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: #ffefe5;
+      cursor: pointer; }
+  /* line 407, resources/assets/styles/layouts/_header.scss */
+  .page.hypnotherapy .faq input {
+    display: none; }
+    /* line 412, resources/assets/styles/layouts/_header.scss */
+    .page.hypnotherapy .faq input:checked + .tab-label::after {
+      transform: rotate(180deg); }
+    /* line 416, resources/assets/styles/layouts/_header.scss */
+    .page.hypnotherapy .faq input:checked ~ .tab-content {
+      max-height: 100vh;
+      padding: 1em;
+      background: #ffefe5; }
 
 /* Accordion */
-/* line 336, resources/assets/styles/layouts/_header.scss */
+/* line 430, resources/assets/styles/layouts/_header.scss */
 #sp-ea-63.sp-easy-accordion .sp-ea-single {
   background: none; }
-  /* line 339, resources/assets/styles/layouts/_header.scss */
+  /* line 433, resources/assets/styles/layouts/_header.scss */
   #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-header {
     background: #FFEFE5; }
-    /* line 342, resources/assets/styles/layouts/_header.scss */
-    #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-header:hover {
-      background: #c58d68; }
-    /* line 346, resources/assets/styles/layouts/_header.scss */
+    /* line 436, resources/assets/styles/layouts/_header.scss */
     #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-header a {
-      font-size: 16px;
-      line-height: 30px;
+      font-size: 1rem;
+      line-height: 1.875rem;
       font-weight: bold; }
-  /* line 354, resources/assets/styles/layouts/_header.scss */
+  /* line 444, resources/assets/styles/layouts/_header.scss */
   #sp-ea-63.sp-easy-accordion .sp-ea-single .ea-body p {
-    font-size: 16px;
-    line-height: 30px; }
+    font-size: 1rem;
+    line-height: 1.875rem; }
 
-/* line 367, resources/assets/styles/layouts/_header.scss */
+/* line 457, resources/assets/styles/layouts/_header.scss */
 .page.bodycode .block.body-code {
   background: #cc9b7a;
   max-width: none;
   flex-shrink: 0;
   height: auto; }
-  /* line 373, resources/assets/styles/layouts/_header.scss */
+  /* line 463, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .block.body-code h2 {
     color: #4a4a4a; }
 
-/* line 378, resources/assets/styles/layouts/_header.scss */
+/* line 468, resources/assets/styles/layouts/_header.scss */
 .page.bodycode .balance-methods {
-  padding: 0 0 130px; }
-  /* line 381, resources/assets/styles/layouts/_header.scss */
+  padding: 0 0 8.125rem; }
+  /* line 471, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .balance-methods ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0; }
-    /* line 387, resources/assets/styles/layouts/_header.scss */
+    /* line 477, resources/assets/styles/layouts/_header.scss */
     .page.bodycode .balance-methods ul li {
       flex: 0 0 100%;
       overflow: hidden; }
-      /* line 391, resources/assets/styles/layouts/_header.scss */
+      /* line 481, resources/assets/styles/layouts/_header.scss */
       .page.bodycode .balance-methods ul li span {
         display: block;
-        padding: 48px;
-        margin: 12px;
+        padding: 3rem;
+        margin: 0.75rem;
         height: auto;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.875rem;
         color: #CC9B7A;
         text-align: left;
         background: #FFEFE5; }
 
-/* line 406, resources/assets/styles/layouts/_header.scss */
+/* line 496, resources/assets/styles/layouts/_header.scss */
 .page.bodycode .benefits {
-  margin-bottom: 130px; }
-  /* line 409, resources/assets/styles/layouts/_header.scss */
+  margin-bottom: 8.125rem; }
+  /* line 499, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .benefits ul {
     column-count: 1;
     column-fill: auto;
-    margin-bottom: 48px; }
-    /* line 414, resources/assets/styles/layouts/_header.scss */
+    margin-bottom: 3rem; }
+    /* line 504, resources/assets/styles/layouts/_header.scss */
     .page.bodycode .benefits ul li {
-      font-size: 16px;
-      line-height: 30px; }
+      font-size: 1rem;
+      line-height: 1.875rem; }
 
-/* line 426, resources/assets/styles/layouts/_header.scss */
+/* line 516, resources/assets/styles/layouts/_header.scss */
 .testimonials {
   display: block;
-  padding: calc(30px * 2) 30px; }
-  /* line 430, resources/assets/styles/layouts/_header.scss */
+  padding: calc(1.875rem * 2) 1.875rem; }
+  /* line 520, resources/assets/styles/layouts/_header.scss */
   .testimonials h2 {
-    margin: 0 0 24px; }
-  /* line 435, resources/assets/styles/layouts/_header.scss */
+    margin: 0 0 1.5rem; }
+  /* line 525, resources/assets/styles/layouts/_header.scss */
   .testimonials #sample_slider .owl-stage-outer {
     width: 100% !important;
     margin: 0 auto; }
-  /* line 440, resources/assets/styles/layouts/_header.scss */
+  /* line 530, resources/assets/styles/layouts/_header.scss */
   .testimonials #sample_slider .owl-nav {
     position: absolute;
     top: 0;
     width: 100%;
     display: none !important; }
-    /* line 446, resources/assets/styles/layouts/_header.scss */
-    .testimonials #sample_slider .owl-nav button {
-      width: 46px !important;
-      height: 106px !important;
+    /* line 536, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-nav button,
+    .testimonials #sample_slider .owl-nav .button,
+    .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav input[type=submit],
+    .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav button[type=submit],
+    .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav .wpforms-page-button {
+      width: 2.875rem !important;
+      height: 6.625rem !important;
       background: #cc9b7a !important;
       background-repeat: no-repeat !important;
       background-position: center !important;
       margin: 0 !important; }
-      /* line 454, resources/assets/styles/layouts/_header.scss */
-      .testimonials #sample_slider .owl-nav button.owl-next {
+      /* line 545, resources/assets/styles/layouts/_header.scss */
+      .testimonials #sample_slider .owl-nav button.owl-next,
+      .testimonials #sample_slider .owl-nav .button.owl-next,
+      .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form input.owl-next[type=submit],
+      .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav input.owl-next[type=submit],
+      .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form button.owl-next[type=submit],
+      .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav button.owl-next[type=submit],
+      .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form .owl-next.wpforms-page-button,
+      .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav .owl-next.wpforms-page-button {
         right: 0;
         background-image: url("http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/arrow_right.svg") !important; }
-        /* line 458, resources/assets/styles/layouts/_header.scss */
-        .testimonials #sample_slider .owl-nav button.owl-next:hover {
+        /* line 549, resources/assets/styles/layouts/_header.scss */
+        .testimonials #sample_slider .owl-nav button.owl-next:hover,
+        .testimonials #sample_slider .owl-nav .button.owl-next:hover,
+        .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form input.owl-next:hover[type=submit],
+        .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav input.owl-next:hover[type=submit],
+        .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form button.owl-next:hover[type=submit],
+        .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav button.owl-next:hover[type=submit],
+        .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form .owl-next.wpforms-page-button:hover,
+        .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav .owl-next.wpforms-page-button:hover {
           transition: auto !important;
           filter: brightness(90%); }
-      /* line 464, resources/assets/styles/layouts/_header.scss */
-      .testimonials #sample_slider .owl-nav button.owl-prev {
+      /* line 555, resources/assets/styles/layouts/_header.scss */
+      .testimonials #sample_slider .owl-nav button.owl-prev,
+      .testimonials #sample_slider .owl-nav .button.owl-prev,
+      .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form input.owl-prev[type=submit],
+      .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav input.owl-prev[type=submit],
+      .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form button.owl-prev[type=submit],
+      .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav button.owl-prev[type=submit],
+      .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form .owl-prev.wpforms-page-button,
+      .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav .owl-prev.wpforms-page-button {
         left: 0;
         background-image: url("http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/arrow_left.svg") !important; }
-        /* line 468, resources/assets/styles/layouts/_header.scss */
-        .testimonials #sample_slider .owl-nav button.owl-prev:hover {
+        /* line 559, resources/assets/styles/layouts/_header.scss */
+        .testimonials #sample_slider .owl-nav button.owl-prev:hover,
+        .testimonials #sample_slider .owl-nav .button.owl-prev:hover,
+        .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form input.owl-prev:hover[type=submit],
+        .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav input.owl-prev:hover[type=submit],
+        .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form button.owl-prev:hover[type=submit],
+        .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav button.owl-prev:hover[type=submit],
+        .testimonials #sample_slider .owl-nav .page.contact div.wpforms-container-full .wpforms-form .owl-prev.wpforms-page-button:hover,
+        .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-nav .owl-prev.wpforms-page-button:hover {
           transition: auto !important;
           filter: brightness(90%); }
-  /* line 477, resources/assets/styles/layouts/_header.scss */
-  .testimonials #sample_slider .owl-dots button {
+  /* line 568, resources/assets/styles/layouts/_header.scss */
+  .testimonials #sample_slider .owl-dots button,
+  .testimonials #sample_slider .owl-dots .button,
+  .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots input[type=submit],
+  .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots button[type=submit],
+  .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button,
+  .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots .wpforms-page-button {
     width: auto;
     height: auto; }
-    /* line 480, resources/assets/styles/layouts/_header.scss */
-    .testimonials #sample_slider .owl-dots button span {
+    /* line 572, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-dots button span,
+    .testimonials #sample_slider .owl-dots .button span,
+    .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form input[type=submit] span,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots input[type=submit] span,
+    .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form button[type=submit] span,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots button[type=submit] span,
+    .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button span,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots .wpforms-page-button span {
       border-radius: 0 !important;
       width: calc(100vw/12) !important;
-      height: 5px !important;
+      height: 0.313rem !important;
       background: #ffe5d4 !important; }
-    /* line 488, resources/assets/styles/layouts/_header.scss */
-    .testimonials #sample_slider .owl-dots button.active span {
+    /* line 580, resources/assets/styles/layouts/_header.scss */
+    .testimonials #sample_slider .owl-dots button.active span,
+    .testimonials #sample_slider .owl-dots .button.active span,
+    .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form input.active[type=submit] span,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots input.active[type=submit] span,
+    .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form button.active[type=submit] span,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots button.active[type=submit] span,
+    .testimonials #sample_slider .owl-dots .page.contact div.wpforms-container-full .wpforms-form .active.wpforms-page-button span,
+    .page.contact div.wpforms-container-full .wpforms-form .testimonials #sample_slider .owl-dots .active.wpforms-page-button span {
       background: #cc9b7a !important; }
 
-/* line 498, resources/assets/styles/layouts/_header.scss */
+/* line 590, resources/assets/styles/layouts/_header.scss */
 .page.about .hero {
-  min-height: 680px;
-  height: auto;
-  background-position-y: -80px; }
+  min-height: 80vw;
+  background-position-y: 0; }
 
-/* line 505, resources/assets/styles/layouts/_header.scss */
+/* line 596, resources/assets/styles/layouts/_header.scss */
+.page.about .block.img {
+  background-position-y: -5rem; }
+
+/* line 600, resources/assets/styles/layouts/_header.scss */
 .page.about .block .icon {
-  margin-bottom: 42px; }
+  margin-bottom: 2.625rem; }
 
-/* line 510, resources/assets/styles/layouts/_header.scss */
+/* line 605, resources/assets/styles/layouts/_header.scss */
 .page.about .continued-education {
-  padding: 130px 0;
+  padding: 8.125rem 0;
   background: #FFE5D4; }
-  /* line 514, resources/assets/styles/layouts/_header.scss */
+  /* line 609, resources/assets/styles/layouts/_header.scss */
   .page.about .continued-education ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0; }
-    /* line 520, resources/assets/styles/layouts/_header.scss */
+    /* line 615, resources/assets/styles/layouts/_header.scss */
     .page.about .continued-education ul li {
-      font-size: 16px;
-      line-height: 21px;
+      font-size: 1rem;
+      line-height: 1.313rem;
       color: #CC9B7A;
       flex: 0 0 100%;
       font-weight: bold;
       overflow: hidden; }
-      /* line 528, resources/assets/styles/layouts/_header.scss */
+      /* line 623, resources/assets/styles/layouts/_header.scss */
       .page.about .continued-education ul li span {
         position: relative;
         display: block;
-        border: solid 2px #CC9B7A;
-        padding: 24px;
-        margin: 12px;
-        height: 195px;
+        border: solid 0.125rem #CC9B7A;
+        padding: 1.5rem;
+        margin: 0.75rem;
+        height: 12.188rem;
         text-align: center; }
-        /* line 537, resources/assets/styles/layouts/_header.scss */
+        /* line 632, resources/assets/styles/layouts/_header.scss */
         .page.about .continued-education ul li span .icon {
           display: block;
-          width: 23px;
+          width: 1.438rem;
           height: auto;
           position: absolute;
-          left: calc(50% - 23px/2);
-          bottom: 23px; }
+          left: calc(50% - 1.438rem/2);
+          bottom: 1.438rem; }
 
-/* line 556, resources/assets/styles/layouts/_header.scss */
+/* line 651, resources/assets/styles/layouts/_header.scss */
 .page.contact h2 {
-  margin: 130px 0 30px; }
+  margin: 8.125rem 0 1.875rem; }
 
-/* line 560, resources/assets/styles/layouts/_header.scss */
+/* line 655, resources/assets/styles/layouts/_header.scss */
 .page.contact .contact-info {
   display: flex;
   line-height: 1.6;
   flex-direction: row;
   flex-wrap: wrap; }
-  /* line 566, resources/assets/styles/layouts/_header.scss */
+  /* line 661, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .left {
     flex: 1 1 100%;
-    margin-bottom: 130px; }
-  /* line 571, resources/assets/styles/layouts/_header.scss */
+    margin-bottom: 8.125rem; }
+  /* line 666, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .wpforms-container {
     flex: 1 1 100%;
-    margin-bottom: 130px; }
-  /* line 576, resources/assets/styles/layouts/_header.scss */
+    margin-bottom: 8.125rem; }
+  /* line 671, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .addresshours {
     display: flex;
-    margin: 40px 0;
+    margin: 2.5rem 0;
     flex-direction: column; }
-  /* line 582, resources/assets/styles/layouts/_header.scss */
+  /* line 677, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .address {
-    margin: 0 0 24px 0; }
-  /* line 587, resources/assets/styles/layouts/_header.scss */
+    margin: 0 0 1.5rem 0; }
+  /* line 682, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .fees ul {
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     list-style-type: none; }
-    /* line 592, resources/assets/styles/layouts/_header.scss */
+    /* line 687, resources/assets/styles/layouts/_header.scss */
     .page.contact .contact-info .fees ul li {
-      margin: 24px 0; }
-      /* line 595, resources/assets/styles/layouts/_header.scss */
+      margin: 1.5rem 0; }
+      /* line 690, resources/assets/styles/layouts/_header.scss */
       .page.contact .contact-info .fees ul li:first-child {
         margin-top: 0; }
-      /* line 599, resources/assets/styles/layouts/_header.scss */
+      /* line 694, resources/assets/styles/layouts/_header.scss */
       .page.contact .contact-info .fees ul li:last-child {
         margin-bottom: 0; }
 
-/* line 607, resources/assets/styles/layouts/_header.scss */
+/* line 702, resources/assets/styles/layouts/_header.scss */
 .page.contact .forms {
   margin: 0;
   padding: 0;
   text-align: center; }
-  /* line 612, resources/assets/styles/layouts/_header.scss */
+  /* line 707, resources/assets/styles/layouts/_header.scss */
   .page.contact .forms .buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 24px 0 130px; }
-    /* line 618, resources/assets/styles/layouts/_header.scss */
-    .page.contact .forms .buttons button {
-      margin: 2px;
+    margin: 1.5rem 0 8.125rem; }
+    /* line 713, resources/assets/styles/layouts/_header.scss */
+    .page.contact .forms .buttons button,
+    .page.contact .forms .buttons .button,
+    .page.contact .forms .buttons div.wpforms-container-full .wpforms-form input[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form .forms .buttons input[type=submit],
+    .page.contact .forms .buttons div.wpforms-container-full .wpforms-form button[type=submit],
+    .page.contact div.wpforms-container-full .wpforms-form .forms .buttons button[type=submit],
+    .page.contact .forms .buttons div.wpforms-container-full .wpforms-form .wpforms-page-button,
+    .page.contact div.wpforms-container-full .wpforms-form .forms .buttons .wpforms-page-button {
+      margin: 0.125rem;
       flex: 0 0 100%;
-      padding: 20px 10px;
+      padding: 1.25rem 0.625rem;
       height: auto;
       width: auto;
       text-align: left; }
-      /* line 626, resources/assets/styles/layouts/_header.scss */
-      .page.contact .forms .buttons button span {
+      /* line 722, resources/assets/styles/layouts/_header.scss */
+      .page.contact .forms .buttons button span,
+      .page.contact .forms .buttons .button span,
+      .page.contact .forms .buttons div.wpforms-container-full .wpforms-form input[type=submit] span,
+      .page.contact div.wpforms-container-full .wpforms-form .forms .buttons input[type=submit] span,
+      .page.contact .forms .buttons div.wpforms-container-full .wpforms-form button[type=submit] span,
+      .page.contact div.wpforms-container-full .wpforms-form .forms .buttons button[type=submit] span,
+      .page.contact .forms .buttons div.wpforms-container-full .wpforms-form .wpforms-page-button span,
+      .page.contact div.wpforms-container-full .wpforms-form .forms .buttons .wpforms-page-button span {
         line-height: 1; }
-      /* line 630, resources/assets/styles/layouts/_header.scss */
-      .page.contact .forms .buttons button .icon {
+      /* line 726, resources/assets/styles/layouts/_header.scss */
+      .page.contact .forms .buttons button .icon,
+      .page.contact .forms .buttons .button .icon,
+      .page.contact .forms .buttons div.wpforms-container-full .wpforms-form input[type=submit] .icon,
+      .page.contact div.wpforms-container-full .wpforms-form .forms .buttons input[type=submit] .icon,
+      .page.contact .forms .buttons div.wpforms-container-full .wpforms-form button[type=submit] .icon,
+      .page.contact div.wpforms-container-full .wpforms-form .forms .buttons button[type=submit] .icon,
+      .page.contact .forms .buttons div.wpforms-container-full .wpforms-form .wpforms-page-button .icon,
+      .page.contact div.wpforms-container-full .wpforms-form .forms .buttons .wpforms-page-button .icon {
         display: inline;
-        margin: 0 10px; }
+        margin: 0 0.625rem; }
 
-/* line 650, resources/assets/styles/layouts/_header.scss */
+/* line 741, resources/assets/styles/layouts/_header.scss */
+.page.contact select {
+  width: 100%;
+  height: 3.75rem;
+  display: block;
+  margin: 5rem 0 1.25rem; }
+
+/* line 753, resources/assets/styles/layouts/_header.scss */
 footer {
-  border-top: solid 1px #909090;
-  font-size: 13px;
-  line-height: 20px;
+  border-top: solid 0.063rem #909090;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
   text-align: center; }
-  /* line 656, resources/assets/styles/layouts/_header.scss */
+  /* line 759, resources/assets/styles/layouts/_header.scss */
   footer strong {
-    font-size: 16px; }
-  /* line 660, resources/assets/styles/layouts/_header.scss */
+    font-size: 1rem; }
+  /* line 763, resources/assets/styles/layouts/_header.scss */
   footer .blocks.container {
     padding: 0;
     display: block; }
-    /* line 664, resources/assets/styles/layouts/_header.scss */
+    /* line 767, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.map {
-      height: 500px;
-      margin-bottom: 20px; }
-    /* line 670, resources/assets/styles/layouts/_header.scss */
+      height: 31.25rem;
+      margin-bottom: 1.25rem; }
+    /* line 773, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.info .left,
     footer .blocks.container .block.info .right {
-      margin: 50px 0; }
-    /* line 676, resources/assets/styles/layouts/_header.scss */
+      margin: 3.125rem 0; }
+    /* line 779, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.info .left .phone {
       font-family: 'conglomerate';
       color: #CC9B7A;
-      font-size: 36px;
-      line-height: 48px; }
-    /* line 683, resources/assets/styles/layouts/_header.scss */
+      font-size: 2.25rem;
+      line-height: 3rem; }
+    /* line 786, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.info .left .address {
-      margin: 16px 0 32px; }
-    /* line 689, resources/assets/styles/layouts/_header.scss */
+      margin: 1rem 0 2rem; }
+    /* line 792, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.info .right .brand {
       display: block;
-      margin: 10px auto; }
-      /* line 693, resources/assets/styles/layouts/_header.scss */
+      margin: 0.625rem auto; }
+      /* line 796, resources/assets/styles/layouts/_header.scss */
       footer .blocks.container .block.info .right .brand img {
         width: 100%;
         height: auto;
-        max-width: 200px; }
-  /* line 703, resources/assets/styles/layouts/_header.scss */
+        max-width: 12.5rem; }
+  /* line 806, resources/assets/styles/layouts/_header.scss */
   footer .menu {
     background: #3a4736;
     margin: 0;
-    padding: 20px 0; }
-    /* line 708, resources/assets/styles/layouts/_header.scss */
+    padding: 1.25rem 0; }
+    /* line 811, resources/assets/styles/layouts/_header.scss */
     footer .menu .menu-item {
       display: block;
-      line-height: 44px; }
-      /* line 712, resources/assets/styles/layouts/_header.scss */
+      line-height: 2.75rem; }
+      /* line 815, resources/assets/styles/layouts/_header.scss */
       footer .menu .menu-item a {
         color: #b0b5af;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 1.25rem;
         font-family: 'conglomerate'; }
-      /* line 721, resources/assets/styles/layouts/_header.scss */
+      /* line 824, resources/assets/styles/layouts/_header.scss */
       footer .menu .menu-item.current-menu-item a, footer .menu .menu-item:hover a {
         color: #cc9b7a; }
 
 @media (min-width: 480px) {
-  /* line 736, resources/assets/styles/layouts/_header.scss */
+  /* line 839, resources/assets/styles/layouts/_header.scss */
   .page.about .continued-education ul li {
     flex: 0 0 50%; }
-    /* line 739, resources/assets/styles/layouts/_header.scss */
+    /* line 842, resources/assets/styles/layouts/_header.scss */
     .page.about .continued-education ul li span {
-      padding: 24px 12px;
-      margin: 6px; } }
+      padding: 1.5rem 0.75rem;
+      margin: 0.375rem; } }
 
-@media (min-width: 540px) {
-  /* line 750, resources/assets/styles/layouts/_header.scss */
-  button {
-    width: 230px; }
-  /* line 754, resources/assets/styles/layouts/_header.scss */
+@media (min-width: 541px) {
+  /* line 853, resources/assets/styles/layouts/_header.scss */
+  .banner {
+    text-align: left;
+    margin: 5rem; }
+  /* line 858, resources/assets/styles/layouts/_header.scss */
+  button,
+  .button,
+  .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    width: 14.375rem; }
+  /* line 864, resources/assets/styles/layouts/_header.scss */
+  .page.contact select {
+    width: auto; }
+  /* line 869, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious {
-    padding: 50px 50px 115%; }
-    /* line 758, resources/assets/styles/layouts/_header.scss */
+    padding: 3.125rem 3.125rem 115%; }
+    /* line 873, resources/assets/styles/layouts/_header.scss */
     .blocks.subconscious .block.right {
-      padding: 0 50px; } }
+      padding: 0 3.125rem; } }
 
 @media (min-width: 651px) {
-  /* line 766, resources/assets/styles/layouts/_header.scss */
+  /* line 881, resources/assets/styles/layouts/_header.scss */
   header {
     padding: 1.875rem 4.063rem; }
-  /* line 770, resources/assets/styles/layouts/_header.scss */
+  /* line 885, resources/assets/styles/layouts/_header.scss */
   .hero {
-    height: 740px;
-    font-size: 60px;
-    line-height: 70px; }
-    /* line 775, resources/assets/styles/layouts/_header.scss */
+    height: 46.25rem;
+    font-size: 3.75rem;
+    line-height: 4.375rem; }
+    /* line 890, resources/assets/styles/layouts/_header.scss */
     .hero span {
       width: 50%;
-      bottom: 100px;
-      right: 130px; }
-  /* line 782, resources/assets/styles/layouts/_header.scss */
+      bottom: 6.25rem;
+      right: 8.125rem; }
+  /* line 897, resources/assets/styles/layouts/_header.scss */
   blockquote.banner-quote {
     font-style: italic;
     text-align: center;
@@ -10141,254 +10309,272 @@ footer {
     width: 100%;
     color: #cc9b7a;
     background: #ffe5d4;
-    padding: 80px;
-    font-size: 36px;
-    line-height: 43px; }
-    /* line 793, resources/assets/styles/layouts/_header.scss */
+    padding: 5rem;
+    font-size: 2.25rem;
+    line-height: 2.688rem; }
+    /* line 908, resources/assets/styles/layouts/_header.scss */
     blockquote.banner-quote span {
       font-family: conglomerate, serif;
-      max-width: 900px;
+      max-width: 56.25rem;
       display: block;
       margin: 0 auto; }
-    /* line 800, resources/assets/styles/layouts/_header.scss */
+    /* line 915, resources/assets/styles/layouts/_header.scss */
     blockquote.banner-quote small {
-      font-size: 16px;
+      font-size: 1rem;
       font-family: gopher; }
-  /* line 807, resources/assets/styles/layouts/_header.scss */
+  /* line 922, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious {
-    padding: 50px 35px;
-    background-position-x: -320px;
+    padding: 3.125rem 2.188rem;
+    background-position-x: -20rem;
     background-size: auto 110%;
-    height: 600px; }
-    /* line 813, resources/assets/styles/layouts/_header.scss */
+    height: 37.5rem; }
+    /* line 928, resources/assets/styles/layouts/_header.scss */
     .blocks.subconscious .block.right {
       flex-basis: 68%;
       padding-right: 0; }
-  /* line 819, resources/assets/styles/layouts/_header.scss */
-  .blocks button {
-    width: 230px; }
-  /* line 824, resources/assets/styles/layouts/_header.scss */
+  /* line 934, resources/assets/styles/layouts/_header.scss */
+  .blocks button,
+  .blocks .button,
+  .blocks .page.contact div.wpforms-container-full .wpforms-form input[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .blocks input[type=submit],
+  .blocks .page.contact div.wpforms-container-full .wpforms-form button[type=submit],
+  .page.contact div.wpforms-container-full .wpforms-form .blocks button[type=submit],
+  .blocks .page.contact div.wpforms-container-full .wpforms-form .wpforms-page-button,
+  .page.contact div.wpforms-container-full .wpforms-form .blocks .wpforms-page-button {
+    width: 14.375rem; }
+  /* line 940, resources/assets/styles/layouts/_header.scss */
   .blocks .block .content {
-    margin: 20%;
-    width: 60%; }
-  /* line 831, resources/assets/styles/layouts/_header.scss */
+    padding: 8.125rem; }
+  /* line 946, resources/assets/styles/layouts/_header.scss */
   .testimonials {
-    padding: 100px 5%; }
-    /* line 834, resources/assets/styles/layouts/_header.scss */
+    padding: 6.25rem 5%; }
+    /* line 949, resources/assets/styles/layouts/_header.scss */
     .testimonials h2 {
-      margin: 0 0 100px; }
-    /* line 839, resources/assets/styles/layouts/_header.scss */
+      margin: 0 0 6.25rem; }
+    /* line 954, resources/assets/styles/layouts/_header.scss */
     .testimonials #sample_slider .sa_hover_container {
-      padding: 0 60px; }
-    /* line 843, resources/assets/styles/layouts/_header.scss */
+      padding: 0 3.75rem; }
+    /* line 958, resources/assets/styles/layouts/_header.scss */
     .testimonials #sample_slider .owl-nav {
       display: block !important; }
-  /* line 852, resources/assets/styles/layouts/_header.scss */
+  /* line 967, resources/assets/styles/layouts/_header.scss */
   .page.about .continued-education ul li {
     flex: 0 0 33%; }
-    /* line 855, resources/assets/styles/layouts/_header.scss */
+    /* line 970, resources/assets/styles/layouts/_header.scss */
     .page.about .continued-education ul li span {
-      padding: 24px 12px;
-      margin: 6px; }
-  /* line 867, resources/assets/styles/layouts/_header.scss */
+      padding: 1.5rem 0.75rem;
+      margin: 0.375rem; }
+  /* line 982, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .balance-methods ul li {
     flex: 0 0 50%; }
-    /* line 870, resources/assets/styles/layouts/_header.scss */
+    /* line 985, resources/assets/styles/layouts/_header.scss */
     .page.bodycode .balance-methods ul li span {
-      height: 350px; }
-  /* line 878, resources/assets/styles/layouts/_header.scss */
+      height: 21.875rem; }
+  /* line 993, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .benefits ul {
     column-count: 2; }
-  /* line 886, resources/assets/styles/layouts/_header.scss */
+  /* line 1001, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .left {
     flex: 1 1 50%;
-    padding-right: 32px; }
-  /* line 891, resources/assets/styles/layouts/_header.scss */
+    padding-right: 2rem; }
+  /* line 1006, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .wpforms-container {
     flex: 1 1 50%; }
-  /* line 898, resources/assets/styles/layouts/_header.scss */
+  /* line 1013, resources/assets/styles/layouts/_header.scss */
   .page.contact .forms .buttons button {
     text-align: center;
-    margin: 2px;
+    margin: 0.125rem;
     flex: 0 0 29%; }
-    /* line 903, resources/assets/styles/layouts/_header.scss */
+    /* line 1018, resources/assets/styles/layouts/_header.scss */
     .page.contact .forms .buttons button .icon {
       display: block;
-      margin: 0 auto 10px; }
-  /* line 913, resources/assets/styles/layouts/_header.scss */
+      margin: 0 auto 0.625rem; }
+  /* line 1028, resources/assets/styles/layouts/_header.scss */
   footer .block.info {
     display: flex;
     justify-content: space-around; }
-    /* line 917, resources/assets/styles/layouts/_header.scss */
+    /* line 1032, resources/assets/styles/layouts/_header.scss */
     footer .block.info .left {
       text-align: left; }
-    /* line 921, resources/assets/styles/layouts/_header.scss */
+    /* line 1036, resources/assets/styles/layouts/_header.scss */
     footer .block.info .right {
       text-align: right; }
-      /* line 924, resources/assets/styles/layouts/_header.scss */
+      /* line 1039, resources/assets/styles/layouts/_header.scss */
       footer .block.info .right .brand {
-        margin-top: 10px; }
-  /* line 931, resources/assets/styles/layouts/_header.scss */
+        margin-top: 0.625rem; }
+  /* line 1046, resources/assets/styles/layouts/_header.scss */
   footer .menu .menu-item {
     display: inline;
-    line-height: 44px;
-    margin: 0 16px; } }
+    line-height: 2.75rem;
+    margin: 0 1rem; } }
 
 @media (min-width: 769px) {
-  /* line 943, resources/assets/styles/layouts/_header.scss */
+  /* line 1058, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious .block.right {
     padding-right: 4vw; }
-  /* line 951, resources/assets/styles/layouts/_header.scss */
+  /* line 1066, resources/assets/styles/layouts/_header.scss */
   .testimonials #sample_slider .sa_hover_container {
-    padding: 0 130px !important; }
-  /* line 958, resources/assets/styles/layouts/_header.scss */
-  .page.about .hero {
-    min-height: auto; }
-  /* line 963, resources/assets/styles/layouts/_header.scss */
+    padding: 0 8.125rem !important; }
+  /* line 1074, resources/assets/styles/layouts/_header.scss */
   .page.about .block .icon {
     float: left;
-    margin: 0 100px 300px 0; }
-  /* line 971, resources/assets/styles/layouts/_header.scss */
+    margin: 0 6.25rem 18.75rem 0; }
+  /* line 1082, resources/assets/styles/layouts/_header.scss */
   .page.about .continued-education ul li {
     flex: 0 0 25%; }
-    /* line 974, resources/assets/styles/layouts/_header.scss */
+    /* line 1085, resources/assets/styles/layouts/_header.scss */
     .page.about .continued-education ul li span {
-      padding: 24px 12px;
-      margin: 6px; }
-      /* line 978, resources/assets/styles/layouts/_header.scss */
+      padding: 1.5rem 0.75rem;
+      margin: 0.375rem; }
+      /* line 1089, resources/assets/styles/layouts/_header.scss */
       .page.about .continued-education ul li span .icon {
-        bottom: 12px; }
-  /* line 989, resources/assets/styles/layouts/_header.scss */
+        bottom: 0.75rem; }
+  /* line 1100, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .benefits ul {
     column-count: 3; }
-  /* line 997, resources/assets/styles/layouts/_header.scss */
+  /* line 1108, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .left {
     flex: 1 1 50%;
-    padding-right: 32px; }
-  /* line 1002, resources/assets/styles/layouts/_header.scss */
+    padding-right: 2rem; }
+  /* line 1113, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .wpforms-container {
     flex: 1 1 50%; }
-  /* line 1007, resources/assets/styles/layouts/_header.scss */
+  /* line 1118, resources/assets/styles/layouts/_header.scss */
   .page.contact .forms {
     text-align: left; }
-    /* line 1011, resources/assets/styles/layouts/_header.scss */
+    /* line 1122, resources/assets/styles/layouts/_header.scss */
     .page.contact .forms .buttons button {
       flex: 1 1 18%; }
-  /* line 1018, resources/assets/styles/layouts/_header.scss */
+  /* line 1129, resources/assets/styles/layouts/_header.scss */
   footer {
-    border-top: solid 1px #909090; }
-    /* line 1020, resources/assets/styles/layouts/_header.scss */
+    border-top: solid 0.063rem #909090; }
+    /* line 1131, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container {
       display: flex;
       max-width: none;
       flex-direction: row; }
-      /* line 1025, resources/assets/styles/layouts/_header.scss */
+      /* line 1136, resources/assets/styles/layouts/_header.scss */
       footer .blocks.container .block.info {
         flex-direction: column;
-        max-width: 720px; }
-        /* line 1029, resources/assets/styles/layouts/_header.scss */
+        max-width: 45rem; }
+        /* line 1140, resources/assets/styles/layouts/_header.scss */
         footer .blocks.container .block.info .left,
         footer .blocks.container .block.info .right {
-          margin: 0 0 0 50px;
+          margin: 0 0 0 3.125rem;
           text-align: left; }
-      /* line 1036, resources/assets/styles/layouts/_header.scss */
+      /* line 1147, resources/assets/styles/layouts/_header.scss */
       footer .blocks.container .block.map {
         margin-bottom: 0; } }
 
 @media (min-width: 993px) {
-  /* line 1045, resources/assets/styles/layouts/_header.scss */
+  /* line 1156, resources/assets/styles/layouts/_header.scss */
   header #btn-hamburger {
     display: none; }
-  /* line 1049, resources/assets/styles/layouts/_header.scss */
+  /* line 1160, resources/assets/styles/layouts/_header.scss */
   header .nav-primary {
     display: block; }
-  /* line 1054, resources/assets/styles/layouts/_header.scss */
+  /* line 1165, resources/assets/styles/layouts/_header.scss */
+  .banner {
+    margin: 8.125rem;
+    font-size: 2.25rem;
+    line-height: 3rem; }
+  /* line 1171, resources/assets/styles/layouts/_header.scss */
   .blocks {
     flex-direction: row; }
-    /* line 1057, resources/assets/styles/layouts/_header.scss */
+    /* line 1175, resources/assets/styles/layouts/_header.scss */
+    .blocks .block .content {
+      padding: 5rem; }
+    /* line 1180, resources/assets/styles/layouts/_header.scss */
     .blocks.subconscious {
       background-size: contain;
-      background-position-x: -80px;
-      height: 640px; }
-      /* line 1062, resources/assets/styles/layouts/_header.scss */
+      background-position-x: -5rem;
+      height: 40rem; }
+      /* line 1185, resources/assets/styles/layouts/_header.scss */
       .blocks.subconscious .block {
-        max-width: 460px;
+        max-width: 28.75rem;
         padding: 0 4vw 0 0; }
-  /* line 1070, resources/assets/styles/layouts/_header.scss */
+  /* line 1193, resources/assets/styles/layouts/_header.scss */
   .page.about .hero {
     background-position-y: center; }
-  /* line 1075, resources/assets/styles/layouts/_header.scss */
+  /* line 1198, resources/assets/styles/layouts/_header.scss */
+  .page.about .block.img {
+    background-position-y: 0; }
+  /* line 1202, resources/assets/styles/layouts/_header.scss */
   .page.about .block .icon {
     float: none;
-    margin: 0 0 42px; }
-  /* line 1084, resources/assets/styles/layouts/_header.scss */
+    margin: 0 0 2.625rem; }
+  /* line 1211, resources/assets/styles/layouts/_header.scss */
   .page.about .continued-education ul li span {
-    padding: 24px;
-    margin: 12px; }
-    /* line 1088, resources/assets/styles/layouts/_header.scss */
+    padding: 1.5rem;
+    margin: 0.75rem; }
+    /* line 1215, resources/assets/styles/layouts/_header.scss */
     .page.about .continued-education ul li span .icon {
-      bottom: 23px; }
-  /* line 1100, resources/assets/styles/layouts/_header.scss */
+      bottom: 1.438rem; }
+  /* line 1227, resources/assets/styles/layouts/_header.scss */
   .page.bodycode .balance-methods ul li {
     flex: 0 0 33%; }
-  /* line 1109, resources/assets/styles/layouts/_header.scss */
+  /* line 1236, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .addresshours {
     flex-direction: row; }
-  /* line 1113, resources/assets/styles/layouts/_header.scss */
+  /* line 1240, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .address {
-    margin: 0 24px 24px 0; }
-  /* line 1117, resources/assets/styles/layouts/_header.scss */
+    margin: 0 1.5rem 1.5rem 0; }
+  /* line 1244, resources/assets/styles/layouts/_header.scss */
   .page.contact .contact-info .wpforms-container {
-    flex: 1 1 420px; }
-  /* line 1125, resources/assets/styles/layouts/_header.scss */
+    flex: 1 1 26.25rem; }
+  /* line 1252, resources/assets/styles/layouts/_header.scss */
   footer .blocks.container .block.info {
-    padding-top: 50px;
+    padding-top: 3.125rem;
     flex-direction: row; }
-    /* line 1129, resources/assets/styles/layouts/_header.scss */
+    /* line 1256, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.info .left,
     footer .blocks.container .block.info .right {
-      margin-left: 10px; }
-    /* line 1134, resources/assets/styles/layouts/_header.scss */
+      margin-left: 0.625rem; }
+    /* line 1261, resources/assets/styles/layouts/_header.scss */
     footer .blocks.container .block.info .right {
       width: 40%;
-      padding-right: 50px; }
-      /* line 1138, resources/assets/styles/layouts/_header.scss */
+      padding-right: 3.125rem; }
+      /* line 1265, resources/assets/styles/layouts/_header.scss */
       footer .blocks.container .block.info .right .copyright {
         margin-top: 2rem;
-        font-size: 10px;
+        font-size: 0.625rem;
         text-align: right;
         line-height: 1.5; }
-  /* line 1149, resources/assets/styles/layouts/_header.scss */
+  /* line 1276, resources/assets/styles/layouts/_header.scss */
   footer .menu .menu-item {
     display: inline;
-    line-height: 44px;
-    margin: 0 32px; } }
+    line-height: 2.75rem;
+    margin: 0 2rem; } }
 
 @media (min-width: 1201px) {
-  /* line 1160, resources/assets/styles/layouts/_header.scss */
+  /* line 1288, resources/assets/styles/layouts/_header.scss */
+  .blocks .block .content {
+    padding: 8.125rem; }
+  /* line 1293, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious {
-    height: 740px;
-    padding: 100px 2vw 100px 130px;
+    height: 46.25rem;
+    padding: 6.25rem 2vw 6.25rem 8.125rem;
     background-position-x: left; }
-    /* line 1165, resources/assets/styles/layouts/_header.scss */
+    /* line 1298, resources/assets/styles/layouts/_header.scss */
     .blocks.subconscious .block.right {
-      max-width: 460px; }
-  /* line 1174, resources/assets/styles/layouts/_header.scss */
+      max-width: 28.75rem; }
+  /* line 1307, resources/assets/styles/layouts/_header.scss */
   footer .blocks.container .block.info .right {
     width: auto; } }
 
 @media (min-width: 1441px) {
-  /* line 1184, resources/assets/styles/layouts/_header.scss */
+  /* line 1317, resources/assets/styles/layouts/_header.scss */
   .blocks.subconscious {
     padding-right: 12vw; } }
 
 /* Icon 1 */
-/* line 1206, resources/assets/styles/layouts/_header.scss */
+/* line 1339, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger {
-  width: 30px;
-  height: 30px;
+  background: transparent;
+  width: 1.875rem;
+  height: 1.875rem;
   position: relative;
-  margin-top: 17px;
+  margin-top: 1.063rem;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -10399,14 +10585,14 @@ footer {
   transition: .5s ease-in-out;
   cursor: pointer; }
 
-/* line 1222, resources/assets/styles/layouts/_header.scss */
+/* line 1356, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 0.125rem;
   width: 100%;
   background: #cc9b7a;
-  border-radius: 9px;
+  border-radius: 0.563rem;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -10419,42 +10605,42 @@ footer {
   transition: .25s ease-in-out; }
 
 /* Icon 3 */
-/* line 1243, resources/assets/styles/layouts/_header.scss */
+/* line 1377, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger span:nth-child(1) {
-  top: 0px; }
+  top: 0; }
 
-/* line 1247, resources/assets/styles/layouts/_header.scss */
+/* line 1381, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger span:nth-child(2),
 #btn-hamburger span:nth-child(3) {
-  top: 12px; }
+  top: 0.75rem; }
 
-/* line 1252, resources/assets/styles/layouts/_header.scss */
+/* line 1386, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger span:nth-child(4) {
-  top: 24px; }
+  top: 1.5rem; }
 
-/* line 1256, resources/assets/styles/layouts/_header.scss */
+/* line 1390, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger.open span:nth-child(1) {
-  top: 18px;
+  top: 1.125rem;
   width: 0%;
   left: 50%; }
 
-/* line 1262, resources/assets/styles/layouts/_header.scss */
+/* line 1396, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-/* line 1269, resources/assets/styles/layouts/_header.scss */
+/* line 1403, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-/* line 1276, resources/assets/styles/layouts/_header.scss */
+/* line 1410, resources/assets/styles/layouts/_header.scss */
 #btn-hamburger.open span:nth-child(4) {
-  top: 18px;
+  top: 1.125rem;
   width: 0%;
   left: 50%; }
 

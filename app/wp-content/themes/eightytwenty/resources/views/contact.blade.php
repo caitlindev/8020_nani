@@ -25,13 +25,45 @@
       <div class="fees">
         <strong>Fees</strong>
         <ul>
-          <li>Hypnotherapy and/or Body Code 50-minute session fee: $100</li>
-          <li>Body Code 20-minute session $50</li>
-          <li>Cash, Check, or Credit Card</li>
+          <?php
+          if (have_rows('fees')):
+            while ( have_rows('fees') ) : the_row();
+              echo '<li>'.get_sub_field("item").'</li>';
+            endwhile;
+          endif;
+          ?>
           <li>(I do not bill insurance companies)</li>
         </ul>
 
-        <button class="gold">Pay with PayPal</button>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="nani.urie@gmail.com">
+          <input type="hidden" name="lc" value="US">
+          <input type="hidden" name="item_name" value="Hypnotherapy 50 min">
+          <input type="hidden" name="button_subtype" value="services">
+          <input type="hidden" name="no_note" value="0">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+
+          <input type="hidden" name="on0" value="Services" />
+          <input type="hidden" name="option_select0" value="Hypnotherapy/Body Code 50 min">
+          <input type="hidden" name="option_amount0" value="100.00">
+          <input type="hidden" name="option_select1" value="Body Code- 20 min">
+          <input type="hidden" name="option_amount1" value="50.00">
+          <input type="hidden" name="option_select2" value="Emotion Code 20 min">
+          <input type="hidden" name="option_amount2" value="50.00">
+          <input type="hidden" name="option_index" value="0">
+
+          <select name="os0" class="custom-select">
+            <option value="Hypnotherapy/Body Code 50 min">Hypnotherapy/Body Code 50 min $100.00 USD</option>
+            <option value="Body Code- 20 min">Body Code- 20 min $50.00 USD</option>
+            <option value="Emotion Code 20 min">Emotion Code 20 min $50.00 USD</option>
+          </select>
+
+          <button class="gold" name="submit" alt="PayPal - The safer, easier way to pay online!">Pay with PayPal</button>
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
       </div>
     </div>
     <?php echo do_shortcode("[wpforms id='66' title='false']"); ?>

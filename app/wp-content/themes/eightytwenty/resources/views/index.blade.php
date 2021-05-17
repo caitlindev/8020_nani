@@ -26,7 +26,7 @@
       <div class="content">
         <h2>Hypnoytherapy</h2>
         <p>Through the art of hypnotherapy I have experienced the power of gently accessing the subconscious mind to help clients overcome negative thoughts and develop the best within themselves.</p>
-        <button class="gold">Learn More</button>
+        <button class="gold" onclick="location.href='/hypnotherapy';">Learn More</button>
     </div>
     </div>
 
@@ -34,7 +34,7 @@
       <div class="content">
         <h2>The Body Code</h2>
         <p>The Body Code is a simple form of energy healing that may facilitate increased health and happiness by providing the body with more balanced conditions that allow it to heal itself.</p>
-        <button class="green">Learn More</button>
+        <button class="green" onclick="location.href='/body-code';">Learn More</button>
       </div>
     </div>
   </div>

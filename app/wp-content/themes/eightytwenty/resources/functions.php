@@ -90,3 +90,15 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+
+add_action( 'admin_init', 'hide_editor' );
+
+function hide_editor() {
+    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+    if( !isset( $post_id ) ) return;
+    $contact = get_the_title($post_id);
+    if($contact == 'Contact'){
+        remove_post_type_support('page', 'editor');
+    }
+}
