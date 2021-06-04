@@ -7,7 +7,9 @@
 @section('content')
 
   <div class="hero" style="background-image: url('<?php echo get_the_post_thumbnail_url($post_id); ?>')">
-    <span>Find Increased Health & Happiness</span>
+    <div class="container">
+      <span>Find Increased Health  & Happiness</span>
+    </div>
   </div>
 
   <blockquote class="banner-quote"><span>“Happiness, not in another place but this place, not for another hour but this hour”</span><small>- Walt Whitman</small></blockquote>
@@ -24,7 +26,7 @@
   <div class="blocks">
     <div class="block left hypnotherapy green">
       <div class="content">
-        <h2>Hypnoytherapy</h2>
+        <h2>Hypnotherapy</h2>
         <p>Through the art of hypnotherapy I have experienced the power of gently accessing the subconscious mind to help clients overcome negative thoughts and develop the best within themselves.</p>
         <button class="gold" onclick="location.href='/hypnotherapy';">Learn More</button>
     </div>

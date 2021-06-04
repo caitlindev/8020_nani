@@ -6,10 +6,16 @@
 
 @section('content')
 <div class="hero" style="background-image: url('<?php echo get_the_post_thumbnail_url($post_id); ?>')">
-  <span>What is Hypnotherapy and Hypnosis?</span>
+  <div class="container">
+    <span>What is Hypnotherapy and Hypnosis?</span>
+  </div>
 </div>
 
-<h2 class="banner">Hypnotherapy is a form of therapy that uses the power of suggestion to help clients bring about positive behavior changes while under hypnosis. Hypnosis is a trance-like state where a person’s focus, attention, and concentration are heightened, and they experience increased suggestibility.</h2>
+<div class="container">
+  <h2 class="banner">
+    Hypnotherapy is a form of therapy that uses the power of suggestion to help clients bring about positive behavior changes while under hypnosis. Hypnosis is a trance-like state where a person’s focus, attention, and concentration are heightened, and they experience increased suggestibility.
+  </h2>
+</div>
 
 <div class="blocks">
   <div class="block left img" style="background-image: url(http://naniurie.kinsta.cloud/wp-content/uploads/2021/03/zen-garden-photo.jpg)"></div>

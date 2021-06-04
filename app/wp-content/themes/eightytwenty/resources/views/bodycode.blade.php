@@ -6,11 +6,14 @@
 
 @section('content')
 <div class="hero" style="background-image: url('<?php echo get_the_post_thumbnail_url($post_id); ?>')">
-  <span>The Body Code™</span>
+  <div class="container">
+    <span>The Body Code™</span>
+  </div>
 </div>
-
-<h2 class="banner">Dr. Brad Nelson, the creator of the Body Code explains:<br/>
+<div class="container">
+  <h2 class="banner">Dr. Brad Nelson, the creator of the Body Code explains:<br/>
 The Body Code™ is an advanced wellness method developed by holistic chiropractor Dr. Bradley Nelson. It’s built on the premise that true health comes from being balanced in 6 different ways:</h2>
+</div>
 
 <div class="balance-methods container">
   <ul>

@@ -7,6 +7,7 @@ $bp-tablet-lg: 768px;
 $bp-desktop-sm: 992px;
 $bp-desktop-md: 1200px;
 $bp-desktop-lg: 1440px;
+$bp-desktop-xl: 2800px;
 
 $logo-height: 3.938rem;
 $margin-desktop: 8.125rem;
@@ -25,7 +26,9 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 75rem;
+  height: 100%;
 }
 
 a {
@@ -83,7 +86,7 @@ button,
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 20%;
   color: white;
   font-family: 'conglomerate';
   position: relative;
@@ -289,7 +292,7 @@ header .nav li {
 
     .content {
       width: 100%;
-      padding: calc(#{$margin-mobile} * 2) $margin-mobile;
+      padding: $margin-mobile;
 
       h2 {
         margin-bottom: 1rem;
@@ -322,13 +325,13 @@ header .nav li {
   .block {
     padding: 0;
 
+    h2 {
+      margin-bottom: 1rem;
+    }
+
     &.right {
       flex-basis: auto;
       padding: 0;
-
-      p {
-        margin-top: 10vw;
-      }
     }
   }
 }
@@ -515,7 +518,7 @@ header .nav li {
 
 .testimonials {
   display: block;
-  padding: calc(#{$margin-mobile} * 2) $margin-mobile;
+  padding: $margin-mobile;
 
   h2 {
     margin: 0 0 1.5rem;
@@ -543,7 +546,7 @@ header .nav li {
         margin: 0 !important;
 
         &.owl-next {
-          right: 0;
+          top: 24px;
           background-image: url('http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/arrow_right.svg') !important;
 
           &:hover {
@@ -553,7 +556,7 @@ header .nav li {
         }
 
         &.owl-prev {
-          left: 0;
+          top: 24px;
           background-image: url('http://naniurie.kinsta.cloud/wp-content/uploads/2021/02/arrow_left.svg') !important;
 
           &:hover {
@@ -564,14 +567,17 @@ header .nav li {
       }
     }
 
+    $testimonial-inner-width: 58.75rem;
+    $slide-count: 6;
+
     .owl-dots {
       button,
       .button {
-        width: auto;
+        width: calc(80%/6);
         height: auto;
         span {
           border-radius: 0 !important;
-          width: calc(100vw/12) !important;
+          width: 90% !important;
           height: 0.313rem !important;
           background: #ffe5d4 !important;
         }
@@ -594,7 +600,8 @@ header .nav li {
 
   .block {
     &.img {
-      background-position-y: -5rem;
+      padding-bottom: 65vh;
+      background-position: center -1rem;
     }
 
     .icon {
@@ -649,7 +656,7 @@ header .nav li {
 
 .page.contact {
   h2 {
-    margin: $margin-desktop 0 1.875rem;
+    padding: $margin-desktop 0 1.875rem;
   }
 
   .contact-info {
@@ -865,16 +872,6 @@ footer {
       width: auto;
     }
   }
-
-  .blocks.subconscious {
-    padding: 3.125rem 3.125rem 115%;
-
-    .block {
-      &.right {
-        padding: 0 3.125rem;
-      }
-    }
-  }
 }
 
 @media (min-width: ($bp-tablet-md + 1)) {
@@ -883,7 +880,7 @@ footer {
   }
 
   .hero {
-    height: 46.25rem;
+    height: 70vh;
     font-size: 3.75rem;
     line-height: 4.375rem;
 
@@ -920,13 +917,13 @@ footer {
 
   .blocks {
     &.subconscious {
-      padding: 3.125rem 2.188rem;
-      background-position-x: -20rem;
-      background-size: auto 110%;
-      height: 37.5rem;
+      padding: $margin-tablet;
+      background-position-y: center;
+      background-size: contain;
+      background-position-x: calc(50% - 36vh);
 
       .block.right {
-        flex-basis: 68%;
+        flex-basis: 44%;
         padding-right: 0;
       }
     }
@@ -944,19 +941,18 @@ footer {
   }
 
   .testimonials {
-    padding: 6.25rem 5%;
-
+    padding: $margin-tablet;
     h2 {
       margin: 0 0 6.25rem;
     }
 
     #sample_slider {
-      .sa_hover_container {
-        padding: 0 3.75rem;
-      }
-
       .owl-nav {
         display: block !important;
+      }
+
+      .owl-item {
+        padding: 0 $margin-tablet;
       }
     }
   }
@@ -1053,19 +1049,10 @@ footer {
 }
 
 @media (min-width: ($bp-tablet-lg + 1)) {
-  .blocks {
-    &.subconscious {
-      .block.right {
-        padding-right: 4vw;
-      }
-    }
-  }
-
   .testimonials {
-    #sample_slider {
-      .sa_hover_container {
-        padding: 0 $margin-desktop !important;
-      }
+    padding: $margin-desktop;
+    .owl-item {
+      padding: 0 $margin-desktop;
     }
   }
 
@@ -1178,12 +1165,9 @@ footer {
     }
 
     &.subconscious {
-      background-size: contain;
-      background-position-x: -5rem;
-      height: 40rem;
+      padding: $margin-desktop;
 
       .block {
-        max-width: 28.75rem;
         padding: 0 4vw 0 0;
       }
     }
@@ -1287,17 +1271,19 @@ footer {
     .block {
       .content {
         padding: $margin-desktop;
+        max-width: 720px;
+      }
+      &.left {
+        .content {
+          float: right;
+        }
       }
     }
 
     &.subconscious {
-      height: 46.25rem;
-      padding: 6.25rem 2vw 6.25rem $margin-desktop;
+      background-size: 49vw;
+      background-position-y: center;
       background-position-x: left;
-
-      .block.right {
-        max-width: 28.75rem;
-      }
     }
   }
 
@@ -1313,9 +1299,12 @@ footer {
 }
 
 @media (min-width: ($bp-desktop-lg + 1)) {
-  .blocks {
-    &.subconscious {
-      padding-right: 12vw;
+  .page.about {
+    .block {
+      &.img {
+        background-size: contain;
+        background-position: right;
+      }
     }
   }
 }
