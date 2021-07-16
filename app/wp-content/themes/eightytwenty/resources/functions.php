@@ -102,3 +102,13 @@ function hide_editor() {
         remove_post_type_support('page', 'editor');
     }
 }
+
+function my_text_strings( $translated_text, $text, $domain ) {
+switch ( $translated_text ) {
+    case 'SA Sliders' :
+        $translated_text = __( 'Testimonials', 'sa sliders' );
+        break;
+}
+return $translated_text;
+}
+add_filter( 'gettext', 'my_text_strings', 20, 3 );

@@ -13,6 +13,7 @@ $logo-height: 3.938rem;
 $margin-desktop: 8.125rem;
 $margin-tablet: 5rem;
 $margin-mobile: 1.875rem;
+$margin-mobile-content: 3rem;
 
 body {
   font-family: gopher, sans-serif;
@@ -292,7 +293,7 @@ header .nav li {
 
     .content {
       width: 100%;
-      padding: $margin-mobile;
+      padding: $margin-mobile-content;
 
       h2 {
         margin-bottom: 1rem;
@@ -356,17 +357,19 @@ header .nav li {
   }
 
   .faq {
-    margin-top: $margin-desktop;
-    margin-bottom: $margin-desktop;
-
-
-
-
+    margin-top: $margin-tablet;
+    margin-bottom: $margin-tablet;
 
     /* Accordion styles */
     .tabs {
       overflow: hidden;
     }
+
+    .tab-label:after {
+        line-height: 20px;
+        margin-top: 6px;
+    }
+
     .tab {
       width: 100%;
       color: #3a4736;
@@ -469,7 +472,7 @@ header .nav li {
   }
 
   .balance-methods {
-    padding: 0 0 $margin-desktop;
+    padding: 0 0 $margin-tablet;
 
     ul {
       display: flex;
@@ -518,7 +521,7 @@ header .nav li {
 
 .testimonials {
   display: block;
-  padding: $margin-mobile;
+  padding: $margin-mobile-content;
 
   h2 {
     margin: 0 0 1.5rem;
@@ -607,10 +610,16 @@ header .nav li {
     .icon {
       margin-bottom: 2.625rem;
     }
+
+    &.certification {
+        .icon {
+            padding: 0 calc(37px/2);
+        }
+    }
   }
 
   .continued-education {
-    padding: $margin-desktop 0;
+    padding: $margin-tablet 0;
     background: #FFE5D4;
 
     ul {
@@ -656,7 +665,7 @@ header .nav li {
 
 .page.contact {
   h2 {
-    padding: $margin-desktop 0 1.875rem;
+    padding: 3rem 0 1.875rem;
   }
 
   .contact-info {
@@ -667,12 +676,12 @@ header .nav li {
 
     .left {
       flex: 1 1 100%;
-      margin-bottom: $margin-desktop;
+      margin-bottom: $margin-tablet;
     }
 
     .wpforms-container {
       flex: 1 1 100%;
-      margin-bottom: $margin-desktop;
+      margin-bottom: $margin-tablet;
     }
 
     .addresshours {
@@ -682,6 +691,7 @@ header .nav li {
     }
 
     .address {
+      max-width: 60%;
       margin: 0 0 1.5rem 0;
     }
 
@@ -959,6 +969,7 @@ footer {
 
   .page.about {
     .continued-education {
+      padding: $margin-desktop 0;
       ul {
         li {
           flex: 0 0 33%;
@@ -1049,13 +1060,6 @@ footer {
 }
 
 @media (min-width: ($bp-tablet-lg + 1)) {
-  .testimonials {
-    padding: $margin-desktop;
-    .owl-item {
-      padding: 0 $margin-desktop;
-    }
-  }
-
   .page.about {
     .block {
       .icon {
@@ -1082,7 +1086,18 @@ footer {
     }
   }
 
+  .page.hypnotherapy {
+    .faq {
+      margin-top: $margin-desktop;
+      margin-bottom: $margin-desktop;
+    }
+  }
+
   .page.bodycode {
+    .balance-methods {
+      padding: 0 0 $margin-desktop;
+    }
+
     .benefits {
       ul {
         column-count: 3;

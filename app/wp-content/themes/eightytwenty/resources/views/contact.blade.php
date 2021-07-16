@@ -9,16 +9,16 @@
   <h2 class="heading">Contact</h2>
   <div class="contact-info">
     <div class="left">
-      <strong>To schedule a session you may fill out the contact form or call 702.506.5373</strong>
+      <strong>To schedule a session you may fill out the contact form or call <?php the_field('phone_number'); ?></strong>
       <div class="addresshours">
         <div class="address">
           <strong>Office address:</strong>
-          <p>9402 W Lake Mead Blvd <br/>Las Vegas, Nevada 89134</p>
+          <p><?php the_field('office_address'); ?></p>
         </div>
 
         <div class="hours">
           <strong>Office hours:</strong>
-          <p>Monday: 9:30am - 12:30pm<br/> Wednesday: 9:30am - 12:30pm <br/>Friday: 1:00pm - 5:00pm</p>
+          <p><?php the_field('office_hours'); ?></p>
         </div>
       </div>
 

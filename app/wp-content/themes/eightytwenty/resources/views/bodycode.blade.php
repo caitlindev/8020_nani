@@ -11,49 +11,24 @@
   </div>
 </div>
 <div class="container">
-  <h2 class="banner">Dr. Brad Nelson, the creator of the Body Code explains:<br/>
-The Body Code™ is an advanced wellness method developed by holistic chiropractor Dr. Bradley Nelson. It’s built on the premise that true health comes from being balanced in 6 different ways:</h2>
+  <h2 class="banner"><?php the_content(); ?></h2>
 </div>
 
 <div class="balance-methods container">
   <ul>
-    <li>
-      <span>
-        <h2>Energies</h2>
-        The Body Code™ uses simple energy work designed to remove potentially damaging emotional and mental energies.
-      </span>
-    </li>
-    <li>
+    <?php
+    if (have_rows('body_code_cards')):
+      while ( have_rows('body_code_cards') ) : the_row();
 
-      <span>
-        <h2>Circuitry</h2>
-        Circuitry systems like chakras, acupuncture meridians, energy circuits of the organs and glands, and the body/spirit connection.
-      </span>
-    </li>
-    <li>
-      <span>
-        <h2>Toxicity</h2>
-        The Body Code™ is intended to identify and address possible harmful toxins that may not show up on traditional tests.
-      </span>
-    </li>
-    <li>
-      <span>
-        <h2>Pathogens</h2>
-        This process is designed to help identify potentially destructive, elusive pathogens so they can be corrected.
-      </span>
-    </li>
-    <li>
-      <span>
-        <h2>Structural</h2>
-        The Body Code™ can help pinpoint imbalances in bones, organs, muscles, nerves, and connective tissues and gently correct them.
-      </span>
-    </li>
-    <li>
-      <span>
-          <h2>Nutritional</h2>
-        Lifestyle imbalances can be identified for areas like nutrient deficiencies, dehydration, activities, or the need for body work.
-      </span>
-    </li>
+        echo '<li>';
+        echo '<span>';
+        echo '<h2>'.get_sub_field("body_code_title").'</h2>';
+        echo get_sub_field("body_code_description");
+        echo '</span>';
+        echo '</li>';
+      endwhile;
+    endif;
+    ?>
   </ul>
 </div>
 

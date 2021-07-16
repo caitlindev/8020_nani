@@ -12,9 +12,7 @@
 </div>
 
 <div class="container">
-  <h2 class="banner">
-    Hypnotherapy is a form of therapy that uses the power of suggestion to help clients bring about positive behavior changes while under hypnosis. Hypnosis is a trance-like state where a person’s focus, attention, and concentration are heightened, and they experience increased suggestibility.
-  </h2>
+  <h2 class="banner"><?php the_content(); ?></h2>
 </div>
 
 <div class="blocks">
