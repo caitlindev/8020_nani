@@ -754,6 +754,24 @@ header .nav li {
     @extend .button;
     @extend .gold;
   }
+  .wpforms-confirmation-container-full,
+  div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+      background: none !important;
+      border: 0 !important;
+      background: none;
+      border: 0;
+      padding: 0;
+      flex: 1 1 26.25rem;
+      margin-bottom: 5rem;
+
+      p {
+          background: rgba(204, 155, 122, 0.1);
+          color: #cc9b7a;
+          padding: 30px 50px;
+          box-sizing: border-box;
+          border: solid 1px #cc9b7a;
+      }
+  }
 
   select {
     width: 100%;
